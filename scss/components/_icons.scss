@@ -4,7 +4,7 @@
   margin: 0 2px;
 
   &:hover {
-    --background-modifier-hover: rgb(var(--ctp-accent));
+    --background-modifier-hover: rgb(var(--efs-accent));
     color: var(--text-on-accent);
   }
 
@@ -14,7 +14,7 @@
 }
 
 .clickable-icon[aria-disabled="true"]:hover {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
 }
 
 .clickable-icon.is-active,
@@ -23,18 +23,18 @@
 .mod-left-split .workspace-tab-header.is-active,
 .mod-right-split .workspace-tab-header.is-active {
   box-shadow:
-    inset 0 0 4px rgb(var(--ctp-crust)),
-    inset 0 0 6px rgb(var(--ctp-base));
-  outline: 1px solid rgb(var(--ctp-surface1));
+    inset 0 0 4px rgb(var(--efs-crust)),
+    inset 0 0 6px rgb(var(--efs-base));
+  outline: 1px solid rgb(var(--efs-surface1));
 
 
   svg {
-    color: rgb(var(--ctp-accent));
+    color: rgb(var(--efs-accent));
   }
 
   &:hover,
   &:hover svg {
-    background-color: rgb(var(--ctp-accent));
+    background-color: rgb(var(--efs-accent));
     box-shadow: none;
     color: var(--text-on-accent);
   }
@@ -44,13 +44,13 @@
 .workspace-tab-header.is-active .workspace-tab-header-inner-close-button:hover,
 .suggestion :hover.list-item-part.clickable-icon[aria-label="Clear search history"],
 .modal-close-button:hover {
-  background-color: rgb(var(--ctp-red));
-  box-shadow: 0 0 2px 1px rgb(var(--ctp-surface1));
-  color: rgb(var(--ctp-base));
+  background-color: rgb(var(--efs-red));
+  box-shadow: 0 0 2px 1px rgb(var(--efs-surface1));
+  color: rgb(var(--efs-base));
 }
 
 .workspace-tab-header-inner-close-button:hover {
-  background-color: rgb(var(--ctp-red), 50%);
+  background-color: rgb(var(--efs-red), 50%);
 }
 
 .workspace-tab-header-inner:hover .workspace-tab-header-inner-icon {
@@ -60,7 +60,7 @@
 
 .search-input-clear-button:hover,
 .search-input-clear-button:active {
-  color: rgb(var(--ctp-red));
+  color: rgb(var(--efs-red));
 }
 
 /*
@@ -69,13 +69,13 @@
 
 .mod-linux .titlebar-button:hover,
 .mod-windows .titlebar-button:hover {
-  background-color: rgb(var(--ctp-pink));
+  background-color: rgb(var(--efs-pink));
   color: var(--text-on-accent);
 }
 
 .mod-linux .titlebar-button.mod-close:hover,
 .mod-windows .titlebar-button.mod-close:hover {
-  background-color: rgb(var(--ctp-red));
+  background-color: rgb(var(--efs-red));
   color: var(--text-on-accent);
 }
 
@@ -131,7 +131,7 @@
 * Hide icons with Style Settings
 */
 
-.ctp-icon-hide {
+.efs-icon-hide {
   .nav-folder .nav-folder-title .nav-folder-title-content::before,
   .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before,
   .nav-folder .nav-folder-title .nav-folder-title-content::before,
@@ -145,7 +145,7 @@
 */
 
 .markdown-source-view.mod-cm6 .pdf-embed .edit-block-button:hover {
-  background-color: rgb(var(--ctp-pink));
+  background-color: rgb(var(--efs-pink));
   color: var(--text-on-accent);
 }
 

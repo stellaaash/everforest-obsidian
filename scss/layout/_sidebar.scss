@@ -1,15 +1,15 @@
 .horizontal-tab-nav-item:hover,
 .vertical-tab-nav-item:hover {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 
 .horizontal-tab-nav-item.is-active,
 .vertical-tab-nav-item.is-active {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
 
   &:hover {
-    background-color: rgb(var(--ctp-accent));
+    background-color: rgb(var(--efs-accent));
   }
 }
 
@@ -22,8 +22,8 @@
 .nav-file-title.is-active,
 .nav-folder-title.is-active,
 .tree-item-self.is-clickable:hover {
-  --nav-item-background-active: rgb(var(--ctp-accent));
-  --nav-item-background-hover: rgb(var(--ctp-accent));
+  --nav-item-background-active: rgb(var(--efs-accent));
+  --nav-item-background-hover: rgb(var(--efs-accent));
   --nav-item-color-hover: var(--text-on-accent);
   --nav-item-color-active: var(--text-on-accent);
 }
@@ -48,15 +48,15 @@
 }
 
 .nav-file-tag {
-  background-color: rgb(var(--ctp-surface0));
+  background-color: rgb(var(--efs-surface0));
   color: var(--text-normal);
-  outline: 1px solid rgb(var(--ctp-surface1));
+  outline: 1px solid rgb(var(--efs-surface1));
 }
 
 .is-active .nav-file-tag {
   box-shadow:
-    inset 0 0 2px rgb(var(--ctp-crust)),
-    inset 0 0 4px rgb(var(--ctp-mantle));
+    inset 0 0 2px rgb(var(--efs-crust)),
+    inset 0 0 4px rgb(var(--efs-mantle));
 }
 
 /*
@@ -76,7 +76,7 @@
 */
 
 .tree-item-self.is-selected {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 
   .tree-item-icon {
@@ -87,7 +87,7 @@
 body:not(.is-grabbing) .tree-item-self.is-active:hover,
 .tree-item-self.is-active {
   --nav-item-color-active: var(--text-on-accent);
-  --nav-item-background-active: rgb(var(--ctp-accent));
+  --nav-item-background-active: rgb(var(--efs-accent));
 
   .tree-item-icon {
     --icon-color: var(--text-on-accent);

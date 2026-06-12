@@ -22,7 +22,7 @@
   color: var(--link-color);
 }
 
-body:not(.ctp-tag-pill) {
+body:not(.efs-tag-pill) {
   .cm-hashtag.cm-hashtag-end {
     text-decoration-color: transparent;
     text-decoration-line: underline;
@@ -30,12 +30,12 @@ body:not(.ctp-tag-pill) {
   }
 
   .cm-hashtag.cm-hashtag-end:hover {
-    text-decoration: underline 1px rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
+    text-decoration: underline 1px rgb(var(--efs-tag-pill-color, var(--efs-accent)));
     text-underline-offset: 1px;
   }
 
   .cm-hashtag::selection {
-    text-shadow: 0.4px 0 0 rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
+    text-shadow: 0.4px 0 0 rgb(var(--efs-tag-pill-color, var(--efs-accent)));
   }
 }
 
@@ -43,7 +43,7 @@ body:not(.ctp-tag-pill) {
 * 1. Restores default Obsidian settings to tags. See: #56
 */
 
-.ctp-tag-pill {
+.efs-tag-pill {
   --tag-size: var(--font-smaller);
   --tag-decoration: none;
   --tag-decoration-hover: none;
@@ -68,7 +68,7 @@ body:not(.ctp-tag-pill) {
   }
 
   &:hover {
-    color: rgb(var(--ctp-red));
+    color: rgb(var(--efs-red));
     text-decoration-line: none;
   }
 }
@@ -78,7 +78,7 @@ body:not(.ctp-tag-pill) {
 .cm-s-obsidian .cm-formatting-link.cm-hmd-barelink,
 .cm-s-obsidian .cm-formatting-link.cm-formatting-link-start,
 .cm-s-obsidian .cm-formatting-link.cm-formatting-link-end {
-  color: rgb(var(--ctp-accent));
+  color: rgb(var(--efs-accent));
 }
 
 .empty-state-action {
@@ -87,7 +87,7 @@ body:not(.ctp-tag-pill) {
 
 @media (hover: hover) {
   .empty-state-action:hover {
-    background-color: rgb(var(--ctp-accent));
+    background-color: rgb(var(--efs-accent));
     color: var(--text-on-accent);
   }
 }

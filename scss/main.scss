@@ -1,5 +1,5 @@
 @use "base/app-variables";
-@use "base/ctp-style-settings";
+@use "base/efs-style-settings";
 @use "base/typography";
 @use "components/animations";
 @use "components/callouts";
@@ -17,7 +17,7 @@
 @use "layout/tabs";
 @use "pages/canvas";
 @use "pages/settings";
-@use "themes/latte-adjustments";
+@use "themes/light-adjustments";
 @use "themes/full-palette";
 @use "vendors/plugins";
 @use "vendors/checklists";

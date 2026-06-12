@@ -10,7 +10,7 @@
 .better-command-palette .suggestion-item .suggestion-flair {
   border-radius: var(--radius-s);
   margin-bottom: 1px;
-  background-color: rgb(var(--ctp-surface0));
+  background-color: rgb(var(--efs-surface0));
   color: var(--text-muted);
 }
 
@@ -39,7 +39,7 @@
 /* Obsidian Git */
 
 .git-commit-msg .git-commit-msg-clear-button:hover {
-  --search-clear-button-color: rgb(var(--ctp-red));
+  --search-clear-button-color: rgb(var(--efs-red));
 }
 
 /* Another Quick Switcher */
@@ -50,12 +50,12 @@
 }
 
 .another-quick-switcher__hit_word {
-  background-color: rgb(var(--ctp-rosewater), 60%);
+  background-color: rgb(var(--efs-rosewater), 60%);
   color: var(--text-on-accent);
 }
 
 /*
-* Adds some padding for larger Catppuccin separator
+* Adds some padding for larger Everforest separator
 */
 
 .another-quick-switcher__status__search-command {
@@ -77,11 +77,11 @@
 }
 
 .omnisearch-result.is-selected .omnisearch-default-highlight {
-  background-color: rgb(var(--ctp-rosewater), 60%);
+  background-color: rgb(var(--efs-rosewater), 60%);
 }
 
 .omnisearch-result:not(.is-selected) .omnisearch-highlight.omnisearch-default-highlight {
-  background-color: rgb(var(--ctp-rosewater), 100%);
+  background-color: rgb(var(--efs-rosewater), 100%);
 }
 
 .omnisearch-result.is-selected {
@@ -98,14 +98,14 @@
 */
 
 body:not(.is-mobile) .mk-main-menu-button:hover {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 
-.ctp-full-palette .mk-sidebar-item {
+.efs-full-palette .mk-sidebar-item {
 
   &:hover {
-    background-color: rgb(var(--ctp-pink));
+    background-color: rgb(var(--efs-pink));
     color: var(--text-on-accent);
   }
 
@@ -114,19 +114,19 @@ body:not(.is-mobile) .mk-main-menu-button:hover {
   }
 }
 
-.ctp-full-palette .mk-sidebar-item-active {
+.efs-full-palette .mk-sidebar-item-active {
   box-shadow:
-    inset 0 0 4px rgb(var(--ctp-crust)),
-    inset 0 0 6px rgb(var(--ctp-base));
-  outline: 1px solid rgb(var(--ctp-surface1));
+    inset 0 0 4px rgb(var(--efs-crust)),
+    inset 0 0 6px rgb(var(--efs-base));
+  outline: 1px solid rgb(var(--efs-surface1));
 
   svg {
-    color: rgb(var(--ctp-pink)) !important;
+    color: rgb(var(--efs-pink)) !important;
   }
 
   &:hover svg,
   &:hover {
-    background-color: rgb(var(--ctp-pink));
+    background-color: rgb(var(--efs-pink));
     box-shadow: none;
     color: var(--text-on-accent) !important;
   }
@@ -135,7 +135,7 @@ body:not(.is-mobile) .mk-main-menu-button:hover {
 .mk-sidebar-item {
 
   &:hover {
-    background-color: rgb(var(--ctp-accent));
+    background-color: rgb(var(--efs-accent));
     color: var(--text-on-accent);
   }
 
@@ -146,24 +146,24 @@ body:not(.is-mobile) .mk-main-menu-button:hover {
 
 .mk-sidebar-item-active {
   box-shadow:
-    inset 0 0 4px rgb(var(--ctp-crust)),
-    inset 0 0 6px rgb(var(--ctp-base));
-  outline: 1px solid rgb(var(--ctp-surface1));
+    inset 0 0 4px rgb(var(--efs-crust)),
+    inset 0 0 6px rgb(var(--efs-base));
+  outline: 1px solid rgb(var(--efs-surface1));
 
   svg {
-    color: rgb(var(--ctp-accent)) !important;
+    color: rgb(var(--efs-accent)) !important;
   }
 
   &:hover svg,
   &:hover {
-    background-color: rgb(var(--ctp-accent));
+    background-color: rgb(var(--efs-accent));
     box-shadow: none;
     color: var(--text-on-accent) !important;
   }
 }
 
 body:not(.is-mobile) .mk-tree-item:hover {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 
@@ -173,7 +173,7 @@ body:not(.is-mobile) .mk-tree-item:hover {
 
 .mk-options-menu__suggestions li.is-active,
 .mk-options-menu__suggestions li:hover {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 
@@ -184,7 +184,7 @@ body:not(.is-mobile) .mk-tree-item:hover {
 }
 
 .mk-file-context-field-new button:hover {
-  color: rgb(var(--ctp-accent)) !important;
+  color: rgb(var(--efs-accent)) !important;
 }
 
 body:not(.is-mobile) .mk-folder-buttons button {
@@ -193,10 +193,10 @@ body:not(.is-mobile) .mk-folder-buttons button {
   & svg { border-radius: 4px; }
 
   &:hover svg {
-    background-color: rgb(var(--ctp-surface0));
+    background-color: rgb(var(--efs-surface0));
     box-shadow: var(--box-shadow-large);
     color: var(--text-normal) !important;
-    outline: 1px solid rgb(var(--ctp-surface1));
+    outline: 1px solid rgb(var(--efs-surface1));
   }
 }
 
@@ -206,16 +206,16 @@ body:not(.is-mobile) .mk-folder-buttons button {
 * it should be simplified at some point.
 */
 
-body:not(.is-grabbing).ctp-full-palette .mk-sidebar {
-  --nav-item-background-active: rgb(var(--ctp-mauve));
-  --nav-item-background-selected: rgb(var(--ctp-mauve));
+body:not(.is-grabbing).efs-full-palette .mk-sidebar {
+  --nav-item-background-active: rgb(var(--efs-mauve));
+  --nav-item-background-selected: rgb(var(--efs-mauve));
   --nav-item-color-active: var(--text-on-accent);
   --nav-item-color-selected: var(--text-on-accent);
 }
 
-body:not(.is-grabbing .ctp-full-palette) .mk-sidebar {
-  --nav-item-background-active: rgb(var(--ctp-accent), 90%);
-  --nav-item-background-selected: rgb(var(--ctp-accent), 90%);
+body:not(.is-grabbing .efs-full-palette) .mk-sidebar {
+  --nav-item-background-active: rgb(var(--efs-accent), 90%);
+  --nav-item-background-selected: rgb(var(--efs-accent), 90%);
   --nav-item-color-active: var(--text-on-accent);
   --nav-item-color-selected: var(--text-on-accent);
 }
@@ -225,23 +225,23 @@ body:not(.is-grabbing .ctp-full-palette) .mk-sidebar {
 */
 
 body:not(.disable-folder-highlight) .tree-item-self.fn-is-active,
-body.ctp-full-palette:not(.disable-folder-highlight) .tree-item-self.fn-is-active {
-  --nav-item-background-active: rgb(var(--ctp-mauve));
-  --nav-item-background-selected: rgb(var(--ctp-mauve));
+body.efs-full-palette:not(.disable-folder-highlight) .tree-item-self.fn-is-active {
+  --nav-item-background-active: rgb(var(--efs-mauve));
+  --nav-item-background-selected: rgb(var(--efs-mauve));
   --nav-item-color-active: var(--text-on-accent);
   --nav-item-color-selected: var(--text-on-accent);
 }
 
 body:not(.disable-folder-highlight) .tree-item-self.fn-is-active {
-  --nav-item-background-active: rgb(var(--ctp-accent));
-  --nav-item-background-selected: rgb(var(--ctp-accent));
+  --nav-item-background-active: rgb(var(--efs-accent));
+  --nav-item-background-selected: rgb(var(--efs-accent));
   --nav-item-color-active: var(--text-on-accent);
   --nav-item-color-selected: var(--text-on-accent);
 }
 
 body:not(.is-grabbing) .tree-item-self.fn-is-active:hover {
-  --nav-item-background-active: rgb(var(--ctp-accent), 90%);
-  --nav-item-background-selected: rgb(var(--ctp-accent), 90%);
+  --nav-item-background-active: rgb(var(--efs-accent), 90%);
+  --nav-item-background-selected: rgb(var(--efs-accent), 90%);
   --nav-item-color-active: var(--text-on-accent);
   --nav-item-color-selected: var(--text-on-accent);
 }
@@ -252,12 +252,12 @@ body:not(.is-grabbing) .tree-item-self.fn-is-active:hover {
 
 .active.svelte-q3wqg9, .day.svelte-q3wqg9:active,
 .active.today.svelte-q3wqg9{
-  background-color: rgb(var(--ctp-green)) !important;
+  background-color: rgb(var(--efs-green)) !important;
   color: var(--text-on-accent) !important;
 }
 
 .today.svelte-q3wqg9{
-  background-color: rgb(var(--ctp-accent)) !important;
+  background-color: rgb(var(--efs-accent)) !important;
   color: var(--text-on-accent) !important;
 }
 
@@ -300,7 +300,7 @@ body:not(.is-grabbing) .tree-item-self.fn-is-active:hover {
 
 /* Make Style Settings accent selection use choice for active items  */
 
-  body.css-settings-manager:not(.is-phone, .ctp-full-palette) .horizontal-tab-nav-item.is-active,
-  body.css-settings-manager:not(.is-phone, .ctp-full-palette) .vertical-tab-nav-item.is-active {
-    --ctp-accent: unset
+  body.css-settings-manager:not(.is-phone, .efs-full-palette) .horizontal-tab-nav-item.is-active,
+  body.css-settings-manager:not(.is-phone, .efs-full-palette) .vertical-tab-nav-item.is-active {
+    --efs-accent: unset
   }

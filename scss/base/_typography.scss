@@ -23,18 +23,18 @@ strong,
 .cm-strong,
 .cm-s-obsidian span.cm-formatting-strong,
 .cm-s-obsidian span.cm-strong {
-  --bold-color: rgb(var(--ctp-bold, var(--ctp-sapphire)));
-  color: rgb(var(--ctp-bold, var(--ctp-sapphire)));
+  --bold-color: rgb(var(--efs-bold, var(--efs-sapphire)));
+  color: rgb(var(--efs-bold, var(--efs-sapphire)));
 }
 
 em,
 .cm-em {
-  --italic-color: rgb(var(--ctp-italic, var(--ctp-green)));
+  --italic-color: rgb(var(--efs-italic, var(--efs-green)));
 }
 
 del,
 .cm-strikethrough {
-  color: rgb(var(--ctp-strikethrough, var(--ctp-maroon)));
+  color: rgb(var(--efs-strikethrough, var(--efs-maroon)));
 }
 
 .cm-s-obsidian .cm-link.cm-strikethrough {
@@ -43,14 +43,14 @@ del,
 
 .markdown-rendered blockquote,
 .cm-s-obsidian span.cm-quote {
-  --blockquote-border-color: rgb(var(--ctp-blockquote, var(--ctp-accent)));
-  --blockquote-color: rgb(var(--ctp-blockquote, var(--ctp-rosewater)));
+  --blockquote-border-color: rgb(var(--efs-blockquote, var(--efs-accent)));
+  --blockquote-color: rgb(var(--efs-blockquote, var(--efs-rosewater)));
 }
 
 .cm-em.cm-strong,
 strong > em,
 em > strong {
-  color: rgb(var(--ctp-teal));
+  color: rgb(var(--efs-teal));
 }
 
 .markdown-source-view ol > li,
@@ -64,14 +64,14 @@ em > strong {
 }
 
 .inline-title {
-  --inline-title-color: rgb(var(--ctp-page-title, var(--ctp-text)));
+  --inline-title-color: rgb(var(--efs-page-title, var(--efs-text)));
 }
 
 h1,
 .markdown-rendered h1,
 .HyperMD-header-1,
 .HyperMD-list-line .cm-header-1 {
-  --h1-color: rgb(var(--ctp-h1, var(--ctp-accent)));
+  --h1-color: rgb(var(--efs-h1, var(--efs-accent)));
 
   line-height: var(--h1-line-height);
 }
@@ -80,7 +80,7 @@ h2,
 .markdown-rendered h2,
 .HyperMD-header-2,
 .HyperMD-list-line .cm-header-2 {
-  --h2-color: rgb(var(--ctp-h2, var(--ctp-accent)));
+  --h2-color: rgb(var(--efs-h2, var(--efs-accent)));
 
   line-height: var(--h2-line-height);
 }
@@ -89,7 +89,7 @@ h3,
 .markdown-rendered h3,
 .HyperMD-header-3,
 .HyperMD-list-line .cm-header-3 {
-  --h3-color: rgb(var(--ctp-h3, var(--ctp-accent)));
+  --h3-color: rgb(var(--efs-h3, var(--efs-accent)));
 
   line-height: var(--h3-line-height);
 }
@@ -98,7 +98,7 @@ h4,
 .markdown-rendered h4,
 .HyperMD-header-4,
 .HyperMD-list-line .cm-header-4 {
-  --h4-color: rgb(var(--ctp-h4, var(--ctp-accent)));
+  --h4-color: rgb(var(--efs-h4, var(--efs-accent)));
 
   line-height: var(--h4-line-height);
 }
@@ -107,7 +107,7 @@ h5,
 .markdown-rendered h5,
 .HyperMD-header-5,
 .HyperMD-list-line .cm-header-5 {
-  --h5-color: rgb(var(--ctp-h5, var(--ctp-accent)));
+  --h5-color: rgb(var(--efs-h5, var(--efs-accent)));
 
   line-height: var(--line-height-normal);
 }
@@ -116,7 +116,7 @@ h6,
 .markdown-rendered h6,
 .HyperMD-header-6,
 .HyperMD-list-line .cm-header-6 {
-  --h6-color: rgb(var(--ctp-h6, var(--ctp-accent)));
+  --h6-color: rgb(var(--efs-h6, var(--efs-accent)));
 
   line-height: var(--line-height-normal);
 }
@@ -134,16 +134,16 @@ h6,
 .markdown-rendered mark,
 .cm-s-obsidian span.cm-formatting-highlight,
 .cm-s-obsidian span.cm-highlight {
-  background-color: rgb(var(--ctp-rosewater));
+  background-color: rgb(var(--efs-rosewater));
   color: var(--text-on-accent);
 
   &.cm-em,
   em {
     background-image:
       linear-gradient(
-        rgb(var(--ctp-green), 40%),
-        rgb(var(--ctp-green), 60%),
-        rgb(var(--ctp-green), 60%),
+        rgb(var(--efs-green), 40%),
+        rgb(var(--efs-green), 60%),
+        rgb(var(--efs-green), 60%),
       );
     color: var(--text-on-accent);
     text-align: left;
@@ -153,9 +153,9 @@ h6,
   strong {
     background-image:
       linear-gradient(
-        rgb(var(--ctp-sapphire), 40%),
-        rgb(var(--ctp-sapphire), 60%),
-        rgb(var(--ctp-sapphire), 40%)
+        rgb(var(--efs-sapphire), 40%),
+        rgb(var(--efs-sapphire), 60%),
+        rgb(var(--efs-sapphire), 40%)
       );
     color: var(--text-on-accent);
   }
@@ -164,30 +164,30 @@ h6,
   del {
     background-image:
       linear-gradient(
-        rgb(var(--ctp-red), 40%),
-        rgb(var(--ctp-red), 60%),
-        rgb(var(--ctp-red), 40%)
+        rgb(var(--efs-red), 40%),
+        rgb(var(--efs-red), 60%),
+        rgb(var(--efs-red), 40%)
       );
     color: var(--text-on-accent);
   }
 }
 
 .cm-s-obsidian span.cm-error {
-  color: rgb(var(--ctp-red));
+  color: rgb(var(--efs-red));
 }
 
 .tooltip {
-  border: 1px solid rgb(var(--ctp-rosewater), 60%);
+  border: 1px solid rgb(var(--efs-rosewater), 60%);
   background-color: var(--background-secondary);
-  box-shadow: 0 0 4px rgb(var(--ctp-mantle));
-  color: rgb(var(--ctp-rosewater), 80%);
+  box-shadow: 0 0 4px rgb(var(--efs-mantle));
+  color: rgb(var(--efs-rosewater), 80%);
 }
 
 .drag-ghost {
   --drag-ghost-background: var(--background-secondary);
-  --drag-ghost-text-color: rgb(var(--ctp-rosewater), 80%);
+  --drag-ghost-text-color: rgb(var(--efs-rosewater), 80%);
 
-  border: 1px solid rgb(var(--ctp-rosewater), 60%);
+  border: 1px solid rgb(var(--efs-rosewater), 60%);
 }
 
 /**
@@ -216,7 +216,7 @@ should have. Hopefully it doesn't break anything!
   left: 50%;
   width: 0;
   border-right: 5px solid transparent;
-  border-bottom: 5px solid rgb(var(--ctp-rosewater), 60%);
+  border-bottom: 5px solid rgb(var(--efs-rosewater), 60%);
   border-left: 5px solid transparent;
   margin-left: -5px;
   content: " ";
@@ -228,7 +228,7 @@ should have. Hopefully it doesn't break anything!
   top: calc(50% - 5px);
   left: -5px;
   border-top: 5px solid transparent;
-  border-right: 5px solid rgb(var(--ctp-rosewater), 60%);
+  border-right: 5px solid rgb(var(--efs-rosewater), 60%);
   border-bottom: 5px solid transparent;
 }
 
@@ -237,25 +237,25 @@ should have. Hopefully it doesn't break anything!
   left: calc(100% + 5px);
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 5px solid rgb(var(--ctp-rosewater), 60%);
+  border-left: 5px solid rgb(var(--efs-rosewater), 60%);
 }
 
 .tooltip.mod-top .tooltip-arrow {
   top: calc(100%);
-  border-top: 5px solid rgb(var(--ctp-rosewater), 60%);
+  border-top: 5px solid rgb(var(--efs-rosewater), 60%);
   border-bottom: 5px solid transparent;
 }
 
 .tooltip.mod-error .tooltip-arrow {
-  border-bottom-color: rgb(var(--ctp-red), 60%);
+  border-bottom-color: rgb(var(--efs-red), 60%);
 }
 
 .tooltip.mod-error.mod-right .tooltip-arrow {
-  border-right-color: rgb(var(--ctp-red), 60%);
+  border-right-color: rgb(var(--efs-red), 60%);
   border-bottom: 5px solid transparent;
 }
 
 .tooltip.mod-error.mod-left .tooltip-arrow {
   border-bottom: 5px solid transparent;
-  border-left-color: rgb(var(--ctp-red), 60%);
+  border-left-color: rgb(var(--efs-red), 60%);
 }

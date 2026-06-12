@@ -1,0 +1,1191 @@
+/* @settings
+name: "Everforest: Flavors and Accents"
+id: everforest-theme-settings
+settings:
+  -
+    id: everforest-theme-dark
+    title: Dark theme contrast
+    description: Select your preferred dark mode contrast level
+    type: class-select
+    allowEmpty: false
+    default: efs-medium
+    options:
+      -
+        label: Soft
+        value: efs-soft
+      -
+        label: Medium
+        value: efs-medium
+      -
+        label: Hard
+        value: efs-hard
+  -
+    id: everforest-theme-accents
+    title: Theme accent
+    description: Select your preferred accent
+    type: class-select
+    allowEmpty: false
+    default: efs-full-palette
+    options:
+      -
+        label: Full palette
+        value: efs-full-palette
+      -
+        label: Rosewater
+        value: efs-accent-rosewater
+      -
+        label: Flamingo
+        value: efs-accent-flamingo
+      -
+        label: Pink
+        value: efs-accent-pink
+      -
+        label: Purple
+        value: efs-accent-mauve
+      -
+        label: Red
+        value: efs-accent-red
+      -
+        label: Maroon
+        value: efs-accent-maroon
+      -
+        label: Orange
+        value: efs-accent-peach
+      -
+        label: Yellow
+        value: efs-accent-yellow
+      -
+        label: Green
+        value: efs-accent-green
+      -
+        label: Aqua
+        value: efs-accent-teal
+      -
+        label: Sky
+        value: efs-accent-sky
+      -
+        label: Sapphire
+        value: efs-accent-sapphire
+      -
+        label: Blue
+        value: efs-accent-blue
+      -
+        label: Lavender
+        value: efs-accent-lavender
+*/
+
+/* @settings
+name: "Everforest: Icon Styles"
+id: everforest-icon-styles
+settings:
+  -
+    id: efs-icon-hide
+    title: Hide icons
+    description: Hide icons styled or created by the theme. May solve compatibility issues between the theme and other third party plugins. Currently applies to folder icons in the file sidebar.
+    type: class-toggle
+*/
+
+/* @settings
+name: "Everforest: Interface Styles"
+id: everforest-interface-styles
+settings:
+  -
+    id: efs-bold-folder-title
+    title: Bold folder title
+    description: Show folder title in bold
+    type: class-toggle
+*/
+
+/* @settings
+name: "Everforest: Font Styles"
+id: everforest-font-styles
+settings:
+  -
+    id: efs-bold
+    title: Bold font color
+    description: Select your bold font color
+    type: variable-select
+    allowEmpty: false
+    default: var(--efs-sapphire)
+    options:
+      -
+        label: Rosewater
+        value: var(--efs-rosewater)
+      -
+        label: Flamingo
+        value: var(--efs-flamingo)
+      -
+        label: Pink
+        value: var(--efs-pink)
+      -
+        label: Purple
+        value: var(--efs-mauve)
+      -
+        label: Red
+        value: var(--efs-red)
+      -
+        label: Maroon
+        value: var(--efs-maroon)
+      -
+        label: Orange
+        value: var(--efs-peach)
+      -
+        label: Yellow
+        value: var(--efs-yellow)
+      -
+        label: Green
+        value: var(--efs-green)
+      -
+        label: Aqua
+        value: var(--efs-teal)
+      -
+        label: Sky
+        value: var(--efs-sky)
+      -
+        label: Sapphire
+        value: var(--efs-sapphire)
+      -
+        label: Blue
+        value: var(--efs-blue)
+      -
+        label: Lavender
+        value: var(--efs-lavender)
+      -
+        label: White
+        value: var(--efs-text)
+      -
+        label: Gray
+        value: var(--efs-subtext0)
+  -
+    id: efs-italic
+    title: Italic font color
+    description: Select your italic font color
+    type: variable-select
+    allowEmpty: false
+    default: var(--efs-green)
+    options:
+      -
+        label: Accent
+        value: var(--efs-accent)
+      -
+        label: Rosewater
+        value: var(--efs-rosewater)
+      -
+        label: Flamingo
+        value: var(--efs-flamingo)
+      -
+        label: Pink
+        value: var(--efs-pink)
+      -
+        label: Purple
+        value: var(--efs-mauve)
+      -
+        label: Red
+        value: var(--efs-red)
+      -
+        label: Maroon
+        value: var(--efs-maroon)
+      -
+        label: Orange
+        value: var(--efs-peach)
+      -
+        label: Yellow
+        value: var(--efs-yellow)
+      -
+        label: Green
+        value: var(--efs-green)
+      -
+        label: Aqua
+        value: var(--efs-teal)
+      -
+        label: Sky
+        value: var(--efs-sky)
+      -
+        label: Sapphire
+        value: var(--efs-sapphire)
+      -
+        label: Blue
+        value: var(--efs-blue)
+      -
+        label: Lavender
+        value: var(--efs-lavender)
+      -
+        label: White
+        value: var(--efs-text)
+      -
+        label: Gray
+        value: var(--efs-subtext0)
+  -
+    id: efs-strikethrough
+    title: Strikethrough color
+    description: Select your strikethrough color
+    type: variable-select
+    allowEmpty: false
+    default: var(--efs-maroon)
+    options:
+      -
+        label: Accent
+        value: var(--efs-accent)
+      -
+        label: Rosewater
+        value: var(--efs-rosewater)
+      -
+        label: Flamingo
+        value: var(--efs-flamingo)
+      -
+        label: Pink
+        value: var(--efs-pink)
+      -
+        label: Purple
+        value: var(--efs-mauve)
+      -
+        label: Red
+        value: var(--efs-red)
+      -
+        label: Maroon
+        value: var(--efs-maroon)
+      -
+        label: Orange
+        value: var(--efs-peach)
+      -
+        label: Yellow
+        value: var(--efs-yellow)
+      -
+        label: Green
+        value: var(--efs-green)
+      -
+        label: Aqua
+        value: var(--efs-teal)
+      -
+        label: Sky
+        value: var(--efs-sky)
+      -
+        label: Sapphire
+        value: var(--efs-sapphire)
+      -
+        label: Blue
+        value: var(--efs-blue)
+      -
+        label: Lavender
+        value: var(--efs-lavender)
+      -
+        label: White
+        value: var(--efs-text)
+      -
+        label: Gray
+        value: var(--efs-subtext0)
+  -
+    id: efs-blockquote
+    title: Blockquote color
+    description: Select your blockquote text color
+    type: variable-select
+    allowEmpty: false
+    default: var(--efs-rosewater)
+    options:
+      -
+        label: Accent
+        value: var(--efs-accent)
+      -
+        label: Rosewater
+        value: var(--efs-rosewater)
+      -
+        label: Flamingo
+        value: var(--efs-flamingo)
+      -
+        label: Pink
+        value: var(--efs-pink)
+      -
+        label: Purple
+        value: var(--efs-mauve)
+      -
+        label: Red
+        value: var(--efs-red)
+      -
+        label: Maroon
+        value: var(--efs-maroon)
+      -
+        label: Orange
+        value: var(--efs-peach)
+      -
+        label: Yellow
+        value: var(--efs-yellow)
+      -
+        label: Green
+        value: var(--efs-green)
+      -
+        label: Aqua
+        value: var(--efs-teal)
+      -
+        label: Sky
+        value: var(--efs-sky)
+      -
+        label: Sapphire
+        value: var(--efs-sapphire)
+      -
+        label: Blue
+        value: var(--efs-blue)
+      -
+        label: Lavender
+        value: var(--efs-lavender)
+      -
+        label: White
+        value: var(--efs-text)
+      -
+        label: Gray
+        value: var(--efs-subtext0)
+  -
+  */
+
+/* @settings
+name: "Everforest: File Name and Headings"
+id: everforest-heading-settings
+settings:
+  -
+    id: efs-page-title
+    title: File name color
+    description: Select your file name color
+    type: variable-select
+    allowEmpty: false
+    default: var(--efs-text)
+    options:
+      -
+        label: Accent
+        value: var(--efs-accent)
+      -
+        label: Rosewater
+        value: var(--efs-rosewater)
+      -
+        label: Flamingo
+        value: var(--efs-flamingo)
+      -
+        label: Pink
+        value: var(--efs-pink)
+      -
+        label: Purple
+        value: var(--efs-mauve)
+      -
+        label: Red
+        value: var(--efs-red)
+      -
+        label: Maroon
+        value: var(--efs-maroon)
+      -
+        label: Orange
+        value: var(--efs-peach)
+      -
+        label: Yellow
+        value: var(--efs-yellow)
+      -
+        label: Green
+        value: var(--efs-green)
+      -
+        label: Aqua
+        value: var(--efs-teal)
+      -
+        label: Sky
+        value: var(--efs-sky)
+      -
+        label: Sapphire
+        value: var(--efs-sapphire)
+      -
+        label: Blue
+        value: var(--efs-blue)
+      -
+        label: Lavender
+        value: var(--efs-lavender)
+      -
+        label: White
+        value: var(--efs-text)
+      -
+        label: Gray
+        value: var(--efs-subtext0)
+  -
+    id: efs-h1
+    title: H1 color
+    description: Select your H1 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--efs-accent)
+    options:
+      -
+        label: Accent
+        value: var(--efs-accent)
+      -
+        label: Rosewater
+        value: var(--efs-rosewater)
+      -
+        label: Flamingo
+        value: var(--efs-flamingo)
+      -
+        label: Pink
+        value: var(--efs-pink)
+      -
+        label: Purple
+        value: var(--efs-mauve)
+      -
+        label: Red
+        value: var(--efs-red)
+      -
+        label: Maroon
+        value: var(--efs-maroon)
+      -
+        label: Orange
+        value: var(--efs-peach)
+      -
+        label: Yellow
+        value: var(--efs-yellow)
+      -
+        label: Green
+        value: var(--efs-green)
+      -
+        label: Aqua
+        value: var(--efs-teal)
+      -
+        label: Sky
+        value: var(--efs-sky)
+      -
+        label: Sapphire
+        value: var(--efs-sapphire)
+      -
+        label: Blue
+        value: var(--efs-blue)
+      -
+        label: Lavender
+        value: var(--efs-lavender)
+      -
+        label: White
+        value: var(--efs-text)
+      -
+        label: Gray
+        value: var(--efs-subtext0)
+  -
+    id: efs-h2
+    title: H2 color
+    description: Select your H2 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--efs-accent)
+    options:
+      -
+        label: Accent
+        value: var(--efs-accent)
+      -
+        label: Rosewater
+        value: var(--efs-rosewater)
+      -
+        label: Flamingo
+        value: var(--efs-flamingo)
+      -
+        label: Pink
+        value: var(--efs-pink)
+      -
+        label: Purple
+        value: var(--efs-mauve)
+      -
+        label: Red
+        value: var(--efs-red)
+      -
+        label: Maroon
+        value: var(--efs-maroon)
+      -
+        label: Orange
+        value: var(--efs-peach)
+      -
+        label: Yellow
+        value: var(--efs-yellow)
+      -
+        label: Green
+        value: var(--efs-green)
+      -
+        label: Aqua
+        value: var(--efs-teal)
+      -
+        label: Sky
+        value: var(--efs-sky)
+      -
+        label: Sapphire
+        value: var(--efs-sapphire)
+      -
+        label: Blue
+        value: var(--efs-blue)
+      -
+        label: Lavender
+        value: var(--efs-lavender)
+      -
+        label: White
+        value: var(--efs-text)
+      -
+        label: Gray
+        value: var(--efs-subtext0)
+  -
+    id: efs-h3
+    title: H3 color
+    description: Select your H3 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--efs-accent)
+    options:
+      -
+        label: Accent
+        value: var(--efs-accent)
+      -
+        label: Rosewater
+        value: var(--efs-rosewater)
+      -
+        label: Flamingo
+        value: var(--efs-flamingo)
+      -
+        label: Pink
+        value: var(--efs-pink)
+      -
+        label: Purple
+        value: var(--efs-mauve)
+      -
+        label: Red
+        value: var(--efs-red)
+      -
+        label: Maroon
+        value: var(--efs-maroon)
+      -
+        label: Orange
+        value: var(--efs-peach)
+      -
+        label: Yellow
+        value: var(--efs-yellow)
+      -
+        label: Green
+        value: var(--efs-green)
+      -
+        label: Aqua
+        value: var(--efs-teal)
+      -
+        label: Sky
+        value: var(--efs-sky)
+      -
+        label: Sapphire
+        value: var(--efs-sapphire)
+      -
+        label: Blue
+        value: var(--efs-blue)
+      -
+        label: Lavender
+        value: var(--efs-lavender)
+      -
+        label: White
+        value: var(--efs-text)
+      -
+        label: Gray
+        value: var(--efs-subtext0)
+  -
+    id: efs-h4
+    title: H4 color
+    description: Select your H4 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--efs-accent)
+    options:
+      -
+        label: Accent
+        value: var(--efs-accent)
+      -
+        label: Rosewater
+        value: var(--efs-rosewater)
+      -
+        label: Flamingo
+        value: var(--efs-flamingo)
+      -
+        label: Pink
+        value: var(--efs-pink)
+      -
+        label: Purple
+        value: var(--efs-mauve)
+      -
+        label: Red
+        value: var(--efs-red)
+      -
+        label: Maroon
+        value: var(--efs-maroon)
+      -
+        label: Orange
+        value: var(--efs-peach)
+      -
+        label: Yellow
+        value: var(--efs-yellow)
+      -
+        label: Green
+        value: var(--efs-green)
+      -
+        label: Aqua
+        value: var(--efs-teal)
+      -
+        label: Sky
+        value: var(--efs-sky)
+      -
+        label: Sapphire
+        value: var(--efs-sapphire)
+      -
+        label: Blue
+        value: var(--efs-blue)
+      -
+        label: Lavender
+        value: var(--efs-lavender)
+      -
+        label: White
+        value: var(--efs-text)
+      -
+        label: Gray
+        value: var(--efs-subtext0)
+  -
+    id: efs-h5
+    title: H5 color
+    description: Select your H5 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--efs-accent)
+    options:
+      -
+        label: Accent
+        value: var(--efs-accent)
+      -
+        label: Rosewater
+        value: var(--efs-rosewater)
+      -
+        label: Flamingo
+        value: var(--efs-flamingo)
+      -
+        label: Pink
+        value: var(--efs-pink)
+      -
+        label: Purple
+        value: var(--efs-mauve)
+      -
+        label: Red
+        value: var(--efs-red)
+      -
+        label: Maroon
+        value: var(--efs-maroon)
+      -
+        label: Orange
+        value: var(--efs-peach)
+      -
+        label: Yellow
+        value: var(--efs-yellow)
+      -
+        label: Green
+        value: var(--efs-green)
+      -
+        label: Aqua
+        value: var(--efs-teal)
+      -
+        label: Sky
+        value: var(--efs-sky)
+      -
+        label: Sapphire
+        value: var(--efs-sapphire)
+      -
+        label: Blue
+        value: var(--efs-blue)
+      -
+        label: Lavender
+        value: var(--efs-lavender)
+      -
+        label: White
+        value: var(--efs-text)
+      -
+        label: Gray
+        value: var(--efs-subtext0)
+  -
+    id: efs-h6
+    title: H6 color
+    description: Select your H6 color
+    type: variable-select
+    allowEmpty: false
+    default: var(--efs-accent)
+    options:
+      -
+        label: Accent
+        value: var(--efs-accent)
+      -
+        label: Rosewater
+        value: var(--efs-rosewater)
+      -
+        label: Flamingo
+        value: var(--efs-flamingo)
+      -
+        label: Pink
+        value: var(--efs-pink)
+      -
+        label: Purple
+        value: var(--efs-mauve)
+      -
+        label: Red
+        value: var(--efs-red)
+      -
+        label: Maroon
+        value: var(--efs-maroon)
+      -
+        label: Orange
+        value: var(--efs-peach)
+      -
+        label: Yellow
+        value: var(--efs-yellow)
+      -
+        label: Green
+        value: var(--efs-green)
+      -
+        label: Aqua
+        value: var(--efs-teal)
+      -
+        label: Sky
+        value: var(--efs-sky)
+      -
+        label: Sapphire
+        value: var(--efs-sapphire)
+      -
+        label: Blue
+        value: var(--efs-blue)
+      -
+        label: Lavender
+        value: var(--efs-lavender)
+      -
+        label: White
+        value: var(--efs-text)
+      -
+        label: Gray
+        value: var(--efs-subtext0)
+*/
+
+/* @settings
+name: "Everforest: PDF Settings"
+id: everforest-pdf
+settings:
+  -
+    id: efs-seamless-pdf
+    title: Remove borders around PDF pages
+    description: View PDFs without borders, akin to the Minimal theme's "seamless" setting
+    type: class-toggle
+  -
+    id: efs-pdf-darken
+    title: Darken PDF background
+    description: When using a dark flavor, inverts a PDF's background color. This might be helpful when using a PDF with a light background in dark mode Obsidian, depending on your preferences and the colors present in the PDF
+    type: class-toggle
+  -
+    id: efs-pdf-blend
+    title: Blend PDF background
+    description: When using light mode, attempts to blend the theme's background color into the PDF
+    type: class-toggle
+*/
+
+/* @settings
+name: "Everforest: Tag Styles"
+id: everforest-tag-styles
+settings:
+  -
+    id: efs-tag-pill
+    title: Pill-shaped tags
+    description: Make tags stand out with a pill-shaped appearance, reverts to Obsidian's default style
+    type: class-toggle
+  -
+    id: efs-tag-pill-color
+    title: Tag text color
+    description: Select your tag text color
+    type: variable-select
+    allowEmpty: false
+    default: var(--efs-accent)
+    options:
+      -
+        label: Accent
+        value: var(--efs-accent)
+      -
+        label: Rosewater
+        value: var(--efs-rosewater)
+      -
+        label: Flamingo
+        value: var(--efs-flamingo)
+      -
+        label: Pink
+        value: var(--efs-pink)
+      -
+        label: Purple
+        value: var(--efs-mauve)
+      -
+        label: Red
+        value: var(--efs-red)
+      -
+        label: Maroon
+        value: var(--efs-maroon)
+      -
+        label: Orange
+        value: var(--efs-peach)
+      -
+        label: Yellow
+        value: var(--efs-yellow)
+      -
+        label: Green
+        value: var(--efs-green)
+      -
+        label: Aqua
+        value: var(--efs-teal)
+      -
+        label: Sky
+        value: var(--efs-sky)
+      -
+        label: Sapphire
+        value: var(--efs-sapphire)
+      -
+        label: Blue
+        value: var(--efs-blue)
+      -
+        label: Lavender
+        value: var(--efs-lavender)
+      -
+        label: White
+        value: var(--efs-text)
+      -
+        label: Gray
+        value: var(--efs-subtext0)
+*/
+
+/* @settings
+
+name: "Everforest: Credits and Source Code"
+id: source-code
+settings:
+  -
+    id: everforest-theme-credits-link
+    title: Credits and Source Code
+    type: heading
+    level: 1
+    collapsed: false
+    description: 💎 View and contribute to the port at github.com/stellaaash/everforest-obsidian
+*/
+
+.theme-light,
+.theme-light.efs-light {
+  --efs-rosewater: 218, 152, 137;
+  --efs-flamingo: 225, 107, 104;
+  --efs-pink: 232, 98, 150;
+  --efs-mauve: 223, 105, 186;
+  --efs-red: 248, 85, 82;
+  --efs-maroon: 247, 99, 67;
+  --efs-peach: 245, 125, 38;
+  --efs-yellow: 223, 160, 0;
+  --efs-green: 141, 161, 1;
+  --efs-teal: 53, 167, 124;
+  --efs-sky: 55, 159, 153;
+  --efs-sapphire: 56, 154, 175;
+  --efs-blue: 58, 148, 197;
+  --efs-lavender: 109, 78, 210;
+  --efs-text: 92, 106, 114;
+  --efs-subtext1: 105, 119, 119;
+  --efs-subtext0: 117, 132, 124;
+  --efs-overlay2: 130, 145, 129;
+  --efs-overlay1: 147, 159, 145;
+  --efs-overlay0: 166, 176, 160;
+  --efs-surface2: 189, 195, 175;
+  --efs-surface1: 224, 220, 199;
+  --efs-surface0: 230, 226, 204;
+  --efs-base: 253, 246, 227;
+  --efs-mantle: 244, 240, 217;
+  --efs-crust: 239, 235, 212;
+  --hex-pink: #e86296;
+  --hex-mauve: #df69ba;
+  --hex-red: #f85552;
+  --hex-peach: #f57d26;
+  --hex-yellow: #dfa000;
+  --hex-green: #8da101;
+  --hex-teal: #35a77c;
+  --hex-sky: #379f99;
+  --hex-sapphire: #389aaf;
+  --hex-blue: #3a94c5;
+  --hex-lavender: #6d4ed2;
+}
+
+.theme-dark.efs-soft {
+  --efs-rosewater: 208, 178, 173;
+  --efs-flamingo: 211, 145, 147;
+  --efs-pink: 220, 144, 163;
+  --efs-mauve: 214, 153, 182;
+  --efs-red: 230, 126, 128;
+  --efs-maroon: 230, 135, 124;
+  --efs-peach: 230, 152, 117;
+  --efs-yellow: 219, 188, 127;
+  --efs-green: 167, 192, 128;
+  --efs-teal: 131, 192, 146;
+  --efs-sky: 129, 190, 159;
+  --efs-sapphire: 128, 188, 169;
+  --efs-blue: 127, 187, 179;
+  --efs-lavender: 142, 138, 200;
+  --efs-text: 211, 198, 170;
+  --efs-subtext1: 193, 188, 167;
+  --efs-subtext0: 175, 179, 163;
+  --efs-overlay2: 157, 169, 160;
+  --efs-overlay1: 133, 146, 137;
+  --efs-overlay0: 122, 132, 120;
+  --efs-surface2: 93, 107, 102;
+  --efs-surface1: 77, 89, 96;
+  --efs-surface0: 58, 70, 76;
+  --efs-base: 51, 60, 67;
+  --efs-mantle: 41, 49, 54;
+  --efs-crust: 35, 42, 46;
+  --hex-pink: #dc90a3;
+  --hex-mauve: #d699b6;
+  --hex-red: #e67e80;
+  --hex-peach: #e69875;
+  --hex-yellow: #dbbc7f;
+  --hex-green: #a7c080;
+  --hex-teal: #83c092;
+  --hex-sky: #81be9f;
+  --hex-sapphire: #80bca9;
+  --hex-blue: #7fbbb3;
+  --hex-lavender: #8e8ac8;
+}
+
+.theme-dark,
+.theme-dark.efs-medium {
+  --efs-rosewater: 208, 178, 173;
+  --efs-flamingo: 211, 145, 147;
+  --efs-pink: 220, 144, 163;
+  --efs-mauve: 214, 153, 182;
+  --efs-red: 230, 126, 128;
+  --efs-maroon: 230, 135, 124;
+  --efs-peach: 230, 152, 117;
+  --efs-yellow: 219, 188, 127;
+  --efs-green: 167, 192, 128;
+  --efs-teal: 131, 192, 146;
+  --efs-sky: 129, 190, 159;
+  --efs-sapphire: 128, 188, 169;
+  --efs-blue: 127, 187, 179;
+  --efs-lavender: 142, 138, 200;
+  --efs-text: 211, 198, 170;
+  --efs-subtext1: 193, 188, 167;
+  --efs-subtext0: 175, 179, 163;
+  --efs-overlay2: 157, 169, 160;
+  --efs-overlay1: 133, 146, 137;
+  --efs-overlay0: 122, 132, 120;
+  --efs-surface2: 86, 99, 95;
+  --efs-surface1: 71, 82, 88;
+  --efs-surface0: 52, 63, 68;
+  --efs-base: 45, 53, 59;
+  --efs-mantle: 35, 42, 46;
+  --efs-crust: 30, 35, 38;
+  --hex-pink: #dc90a3;
+  --hex-mauve: #d699b6;
+  --hex-red: #e67e80;
+  --hex-peach: #e69875;
+  --hex-yellow: #dbbc7f;
+  --hex-green: #a7c080;
+  --hex-teal: #83c092;
+  --hex-sky: #81be9f;
+  --hex-sapphire: #80bca9;
+  --hex-blue: #7fbbb3;
+  --hex-lavender: #8e8ac8;
+}
+
+.theme-dark.efs-hard {
+  --efs-rosewater: 208, 178, 173;
+  --efs-flamingo: 211, 145, 147;
+  --efs-pink: 220, 144, 163;
+  --efs-mauve: 214, 153, 182;
+  --efs-red: 230, 126, 128;
+  --efs-maroon: 230, 135, 124;
+  --efs-peach: 230, 152, 117;
+  --efs-yellow: 219, 188, 127;
+  --efs-green: 167, 192, 128;
+  --efs-teal: 131, 192, 146;
+  --efs-sky: 129, 190, 159;
+  --efs-sapphire: 128, 188, 169;
+  --efs-blue: 127, 187, 179;
+  --efs-lavender: 142, 138, 200;
+  --efs-text: 211, 198, 170;
+  --efs-subtext1: 193, 188, 167;
+  --efs-subtext0: 175, 179, 163;
+  --efs-overlay2: 157, 169, 160;
+  --efs-overlay1: 133, 146, 137;
+  --efs-overlay0: 122, 132, 120;
+  --efs-surface2: 79, 91, 88;
+  --efs-surface1: 65, 75, 80;
+  --efs-surface0: 46, 56, 60;
+  --efs-base: 39, 46, 51;
+  --efs-mantle: 30, 35, 38;
+  --efs-crust: 24, 28, 31;
+  --hex-pink: #dc90a3;
+  --hex-mauve: #d699b6;
+  --hex-red: #e67e80;
+  --hex-peach: #e69875;
+  --hex-yellow: #dbbc7f;
+  --hex-green: #a7c080;
+  --hex-teal: #83c092;
+  --hex-sky: #81be9f;
+  --hex-sapphire: #80bca9;
+  --hex-blue: #7fbbb3;
+  --hex-lavender: #8e8ac8;
+}
+
+.theme-light,
+.theme-dark {
+  --color-red-rgb: var(--efs-red);
+  --color-red: var(--hex-red);
+  --color-orange-rgb: var(--efs-peach);
+  --color-orange: var(--hex-peach);
+  --color-yellow-rgb: var(--efs-yellow);
+  --color-yellow: var(--hex-yellow);
+  --color-green-rgb: var(--efs-green);
+  --color-green: var(--hex-green);
+  --color-cyan-rgb: var(--efs-sapphire);
+  --color-cyan: var(--hex-sapphire);
+  --color-blue-rgb: var(--efs-blue);
+  --color-blue: var(--hex-blue);
+  --color-purple-rgb: var(--efs-mauve);
+  --color-purple: var(--hex-mauve);
+  --color-pink-rgb: var(--efs-pink);
+  --color-pink: var(--hex-pink);
+}
+
+/* ------------------Selecting Accents------------------- */
+
+.efs-full-palette {
+  --efs-accent: var(--efs-lavender);
+}
+
+.efs-accent-rosewater {
+  --efs-accent: var(--efs-rosewater);
+}
+
+.efs-accent-flamingo {
+  --efs-accent: var(--efs-flamingo);
+}
+
+.efs-accent-pink {
+  --efs-accent: var(--efs-pink);
+}
+
+.efs-accent-mauve {
+  --efs-accent: var(--efs-mauve);
+}
+
+.efs-accent-red {
+  --efs-accent: var(--efs-red);
+}
+
+.efs-accent-maroon {
+  --efs-accent: var(--efs-maroon);
+}
+
+.efs-accent-peach {
+  --efs-accent: var(--efs-peach);
+}
+
+.efs-accent-yellow {
+  --efs-accent: var(--efs-yellow);
+}
+
+.efs-accent-green {
+  --efs-accent: var(--efs-green);
+}
+
+.efs-accent-teal {
+  --efs-accent: var(--efs-teal);
+}
+
+.efs-accent-sky {
+  --efs-accent: var(--efs-sky);
+}
+
+.efs-accent-sapphire {
+  --efs-accent: var(--efs-sapphire);
+}
+
+.efs-accent-blue {
+  --efs-accent: var(--efs-blue);
+}
+
+.efs-accent-lavender {
+  --efs-accent: var(--efs-lavender);
+}
+
+/* ------------------Actual Configs-------------------- */
+.theme-dark,
+.theme-light {
+  --background-primary: rgb(var(--efs-base));
+  --background-primary-rgb: var(--efs-base);
+  --background-primary-alt: rgb(var(--efs-mantle));
+  --background-secondary: rgb(var(--efs-mantle));
+  --background-secondary-alt: rgb(var(--efs-crust));
+  --background-modifier-border: rgb(var(--efs-surface0));
+  --background-modifier-form-field: rgb(var(--efs-crust), 30%);
+  --background-modifier-form-field-highlighted: rgb(var(--efs-crust), 22%);
+  --background-modifier-box-shadow: rgb(var(--efs-crust), 30%);
+  --background-modifier-success: rgb(var(--efs-green), 90%);
+  --background-modifier-success-rgb: var(--efs-green);
+  --background-modifier-error: rgb(var(--efs-red), 90%);
+  --background-modifier-error-rgb: var(--efs-red);
+  --background-modifier-error-hover: rgb(var(--efs-red), 100%);
+  --background-modifier-cover: rgb(var(--efs-crust), 90%);
+  --color-accent: rgb(var(--efs-accent));
+  --color-accent-1: rgb(var(--efs-accent));
+  --color-accent-2: rgb(var(--efs-accent), 90%);
+  --text-accent: rgb(var(--efs-accent));
+  --text-accent-hover: rgb(var(--efs-accent));
+  --text-normal: rgb(var(--efs-text));
+  --text-muted: rgb(var(--efs-subtext0));
+  --text-muted-rgb: var(--efs-subtext0);
+  --text-faint: rgb(var(--efs-surface1));
+  --text-error: rgb(var(--efs-red));
+  --text-error-hover: rgb(var(--efs-red), 80%);
+  --text-highlight-bg: rgb(var(--efs-rosewater), 100%);
+  --text-highlight-bg-active: rgb(var(--efs-rosewater), 100%);
+  --text-selection: rgb(var(--efs-overlay2), 30%);
+  --text-on-accent: rgb(var(--efs-mantle));
+  --text-on-accent-inverted: rgb(var(--efs-mantle));
+  --interactive-normal: rgb(var(--efs-surface0));
+  --interactive-hover: rgb(var(--efs-surface1));
+  --interactive-accent: rgb(var(--efs-accent));
+  --interactive-accent-rgb: var(--efs-accent);
+  --interactive-accent-hover: rgb(var(--efs-accent));
+  --interactive-success: rgb(var(--efs-green));
+  --scrollbar-active-thumb-bg: rgb(var(--efs-text), 20%);
+  --scrollbar-bg: rgb(var(--efs-text), 5%);
+  --scrollbar-thumb-bg: rgb(var(--efs-text), 10%);
+  --mono-rgb-0: var(--efs-crust);
+  --mono-rgb-100: var(--efs-text);
+  --color-red-rgb: var(--efs-red);
+  --color-red: rgb(var(--efs-red));
+  --color-green-rgb: var(--efs-green);
+  --color-green: rgb(var(--efs-green));
+  --color-orange: rgb(var(--efs-peach));
+  --color-yellow: rgb(var(--efs-yellow));
+  --color-cyan: rgb(var(--efs-sky));
+  --color-blue: rgb(var(--efs-blue));
+  --color-purple: rgb(var(--efs-lavender));
+  --color-pink: rgb(var(--efs-pink));
+  --color-base-00: rgb(var(--efs-crust));
+  --color-base-10: rgb(var(--efs-mantle));
+  --color-base-20: rgb(var(--efs-base));
+  --color-base-25: rgb(var(--efs-surface0));
+  --color-base-30: rgb(var(--efs-surface1));
+  --color-base-35: rgb(var(--efs-surface2));
+  --color-base-40: rgb(var(--efs-overlay0));
+  --color-base-50: rgb(var(--efs-overlay1));
+  --color-base-60: rgb(var(--efs-overlay2));
+  --color-base-70: rgb(var(--efs-subtext0));
+  --color-base-100: rgb(var(--efs-text));
+}
+
+.theme-dark {
+  color-scheme: dark;
+
+  --highlight-mix-blend-mode: lighten;
+}
+
+.theme-light {
+  color-scheme: light;
+
+  --highlight-mix-blend-mode: darken;
+}
+
+/* ------------------CSS Snippets------------------ */
+
+.efs-bold-folder-title .nav-folder-title-content {
+  font-weight: var(--font-bold);
+}

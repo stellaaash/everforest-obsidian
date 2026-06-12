@@ -10,7 +10,7 @@
 }
 
 .canvas-controls button:hover {
-  --interactive-hover: rgb(var(--ctp-accent));
+  --interactive-hover: rgb(var(--efs-accent));
   --text-normal: var(--text-on-accent);
 }
 
@@ -20,7 +20,7 @@
 
 @media (hover: hover) {
   .canvas-control-item:hover {
-    background-color: rgb(var(--ctp-pink));
+    background-color: rgb(var(--efs-pink));
     color: var(--text-on-accent);
   }
 }

@@ -1,7 +1,7 @@
 {
-	"name": "Catppuccin",
+	"name": "Everforest",
 	"version": "0.4.47",
 	"minAppVersion": "1.0.0",
-	"author": "Catppuccin",
-	"authorUrl": "https://github.com/catppuccin/obsidian"
+	"author": "stellaaash (Everforest port of Catppuccin's theme)",
+	"authorUrl": "https://github.com/stellaaash/everforest-obsidian"
 }

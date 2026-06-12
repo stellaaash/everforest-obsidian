@@ -6,7 +6,7 @@
 
 .theme-light,
 .theme-dark {
-  &.ctp-seamless-pdf {
+  &.efs-seamless-pdf {
     --pdf-shadow: none;
 
     .pdfViewer .page {
@@ -16,7 +16,7 @@
 }
 
 .theme-dark {
-  &.ctp-pdf-darken {
+  &.efs-pdf-darken {
     .pdfViewer .canvasWrapper,
     .pdf-thumbnail-view .thumbnailImage {
       filter: invert(1) hue-rotate(180deg);
@@ -26,7 +26,7 @@
 }
 
 .theme-light {
-  &.ctp-pdf-blend {
+  &.efs-pdf-blend {
     .pdfViewer .canvasWrapper,
     .pdf-thumbnail-view .thumbnailImage {
       mix-blend-mode: multiply;

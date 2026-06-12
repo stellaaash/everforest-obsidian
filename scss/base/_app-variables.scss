@@ -24,7 +24,7 @@ body {
 
   /* Blockquotes */
   --blockquote-border-thickness: 2px;
-  --blockquote-border-color: rgb(var(--ctp-accent));
+  --blockquote-border-color: rgb(var(--efs-accent));
   --blockquote-font-style: normal;
   --blockquote-color: inherit;
   --blockquote-background-color: transparent;
@@ -86,7 +86,7 @@ body {
   --checkbox-border-color: var(--text-faint);
   --checkbox-border-color-hover: var(--text-muted);
   --checklist-done-decoration: line-through;
-  --checklist-done-color: rgb(var(--ctp-accent));
+  --checklist-done-color: rgb(var(--efs-accent));
 
   /* Code */
   --code-white-space: pre-wrap;
@@ -267,8 +267,8 @@ body {
   --clickable-icon-radius: var(--radius-s);
 
   /* Indentation guide */
-  --indentation-guide-color: rgba(var(--ctp-surface1));
-  --indentation-guide-color-active: rgb(var(--ctp-accent), 70%);
+  --indentation-guide-color: rgba(var(--efs-surface1));
+  --indentation-guide-color-active: rgb(var(--efs-accent), 70%);
   --indentation-guide-width: 2px;
 
   /* Inline title */
@@ -308,26 +308,26 @@ body {
   --line-height-tight: 1.25;
 
   /* Links */
-  --link-color: rgb(var(--ctp-blue));
-  --link-color-hover: rgb(var(--ctp-blue));
+  --link-color: rgb(var(--efs-blue));
+  --link-color-hover: rgb(var(--efs-blue));
   --link-decoration: none;
   --link-decoration-hover: underline;
   --link-decoration-thickness: 2px;
-  --link-external-color: rgb(var(--ctp-teal));
-  --link-external-color-hover: rgb(var(--ctp-teal));
+  --link-external-color: rgb(var(--efs-teal));
+  --link-external-color-hover: rgb(var(--efs-teal));
   --link-external-decoration: none;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: rgb(var(--ctp-maroon));
+  --link-unresolved-color: rgb(var(--efs-maroon));
   --link-unresolved-opacity: 1;
   --link-unresolved-filter: none;
   --link-unresolved-decoration-style: solid;
-  --link-unresolved-decoration-color: rgb(var(--ctp-red));
+  --link-unresolved-decoration-color: rgb(var(--efs-red));
 
   /* Lists */
   --list-indent: 2em;
   --list-spacing: 0.1em;
-  --list-marker-color: rgb(var(--ctp-accent));
+  --list-marker-color: rgb(var(--efs-accent));
   --list-marker-color-hover: var(--text-muted);
   --list-marker-color-collapsed: var(--text-accent);
   --list-bullet-border: none;
@@ -538,8 +538,8 @@ body {
 
   /* Tags */
   --tag-size: max(var(--font-ui-medium), var(--font-small));
-  --tag-color: rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
-  --tag-color-hover: rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
+  --tag-color: rgb(var(--efs-tag-pill-color, var(--efs-accent)));
+  --tag-color-hover: rgb(var(--efs-tag-pill-color, var(--efs-accent)));
   --tag-decoration: none;
   --tag-decoration-hover: underline;
   --tag-background: transparent;

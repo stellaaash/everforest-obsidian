@@ -23,7 +23,7 @@ body {
   --anim-motion-swing: cubic-bezier(0, 0.55, 0.45, 1);
   /* Blockquotes */
   --blockquote-border-thickness: 2px;
-  --blockquote-border-color: rgb(var(--ctp-accent));
+  --blockquote-border-color: rgb(var(--efs-accent));
   --blockquote-font-style: normal;
   --blockquote-color: inherit;
   --blockquote-background-color: transparent;
@@ -79,7 +79,7 @@ body {
   --checkbox-border-color: var(--text-faint);
   --checkbox-border-color-hover: var(--text-muted);
   --checklist-done-decoration: line-through;
-  --checklist-done-color: rgb(var(--ctp-accent));
+  --checklist-done-color: rgb(var(--efs-accent));
   /* Code */
   --code-white-space: pre-wrap;
   --code-size: var(--font-smaller);
@@ -241,8 +241,8 @@ body {
   --icon-opacity-active: 1;
   --clickable-icon-radius: var(--radius-s);
   /* Indentation guide */
-  --indentation-guide-color: rgba(var(--ctp-surface1));
-  --indentation-guide-color-active: rgb(var(--ctp-accent), 70%);
+  --indentation-guide-color: rgba(var(--efs-surface1));
+  --indentation-guide-color-active: rgb(var(--efs-accent), 70%);
   --indentation-guide-width: 2px;
   /* Inline title */
   --inline-title-color: var(--h1-color);
@@ -276,25 +276,25 @@ body {
   --line-height-normal: 1.5;
   --line-height-tight: 1.25;
   /* Links */
-  --link-color: rgb(var(--ctp-blue));
-  --link-color-hover: rgb(var(--ctp-blue));
+  --link-color: rgb(var(--efs-blue));
+  --link-color-hover: rgb(var(--efs-blue));
   --link-decoration: none;
   --link-decoration-hover: underline;
   --link-decoration-thickness: 2px;
-  --link-external-color: rgb(var(--ctp-teal));
-  --link-external-color-hover: rgb(var(--ctp-teal));
+  --link-external-color: rgb(var(--efs-teal));
+  --link-external-color-hover: rgb(var(--efs-teal));
   --link-external-decoration: none;
   --link-external-decoration-hover: underline;
   --link-external-filter: none;
-  --link-unresolved-color: rgb(var(--ctp-maroon));
+  --link-unresolved-color: rgb(var(--efs-maroon));
   --link-unresolved-opacity: 1;
   --link-unresolved-filter: none;
   --link-unresolved-decoration-style: solid;
-  --link-unresolved-decoration-color: rgb(var(--ctp-red));
+  --link-unresolved-decoration-color: rgb(var(--efs-red));
   /* Lists */
   --list-indent: 2em;
   --list-spacing: 0.1em;
-  --list-marker-color: rgb(var(--ctp-accent));
+  --list-marker-color: rgb(var(--efs-accent));
   --list-marker-color-hover: var(--text-muted);
   --list-marker-color-collapsed: var(--text-accent);
   --list-bullet-border: none;
@@ -487,8 +487,8 @@ body {
   --table-row-last-border-width: var(--table-border-width);
   /* Tags */
   --tag-size: max(var(--font-ui-medium), var(--font-small));
-  --tag-color: rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
-  --tag-color-hover: rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
+  --tag-color: rgb(var(--efs-tag-pill-color, var(--efs-accent)));
+  --tag-color-hover: rgb(var(--efs-tag-pill-color, var(--efs-accent)));
   --tag-decoration: none;
   --tag-decoration-hover: underline;
   --tag-background: transparent;
@@ -570,1168 +570,1168 @@ body {
 }
 
 /* @settings
-name: "Catppuccin: Catppuccin Accents"
-id: catppuccin-theme-settings
+name: "Everforest: Flavors and Accents"
+id: everforest-theme-settings
 settings:
   -
-    id: catppuccin-theme-dark
-    title: Dark theme flavor
-    description: Select your preferred dark mode flavor
+    id: everforest-theme-dark
+    title: Dark theme contrast
+    description: Select your preferred dark mode contrast level
     type: class-select
     allowEmpty: false
-    default: ctp-mocha
+    default: efs-medium
     options:
       -
-        label: Frappe
-        value: ctp-frappe
+        label: Soft
+        value: efs-soft
       -
-        label: Macchiato
-        value: ctp-macchiato
+        label: Medium
+        value: efs-medium
       -
-        label: Mocha
-        value: ctp-mocha
+        label: Hard
+        value: efs-hard
   -
-    id: catppuccin-theme-accents
+    id: everforest-theme-accents
     title: Theme accent
     description: Select your preferred accent
     type: class-select
     allowEmpty: false
-    default: ctp-full-palette
+    default: efs-full-palette
     options:
       -
         label: Full palette
-        value: ctp-full-palette
+        value: efs-full-palette
       -
         label: Rosewater
-        value: ctp-accent-rosewater
+        value: efs-accent-rosewater
       -
         label: Flamingo
-        value: ctp-accent-flamingo
+        value: efs-accent-flamingo
       -
         label: Pink
-        value: ctp-accent-pink
+        value: efs-accent-pink
       -
-        label: Mauve
-        value: ctp-accent-mauve
+        label: Purple
+        value: efs-accent-mauve
       -
         label: Red
-        value: ctp-accent-red
+        value: efs-accent-red
       -
         label: Maroon
-        value: ctp-accent-maroon
+        value: efs-accent-maroon
       -
-        label: Peach
-        value: ctp-accent-peach
+        label: Orange
+        value: efs-accent-peach
       -
         label: Yellow
-        value: ctp-accent-yellow
+        value: efs-accent-yellow
       -
         label: Green
-        value: ctp-accent-green
+        value: efs-accent-green
       -
-        label: Teal
-        value: ctp-accent-teal
+        label: Aqua
+        value: efs-accent-teal
       -
         label: Sky
-        value: ctp-accent-sky
+        value: efs-accent-sky
       -
         label: Sapphire
-        value: ctp-accent-sapphire
+        value: efs-accent-sapphire
       -
         label: Blue
-        value: ctp-accent-blue
+        value: efs-accent-blue
       -
         label: Lavender
-        value: ctp-accent-lavender
+        value: efs-accent-lavender
 */
 /* @settings
-name: "Catppuccin: Icon Styles"
-id: catppuccin-icon-styles
+name: "Everforest: Icon Styles"
+id: everforest-icon-styles
 settings:
   -
-    id: ctp-icon-hide
+    id: efs-icon-hide
     title: Hide icons
     description: Hide icons styled or created by the theme. May solve compatibility issues between the theme and other third party plugins. Currently applies to folder icons in the file sidebar.
     type: class-toggle
 */
 /* @settings
-name: "Catppuccin: Interface Styles"
-id: catppuccin-interface-styles
+name: "Everforest: Interface Styles"
+id: everforest-interface-styles
 settings:
   -
-    id: ctp-bold-folder-title
+    id: efs-bold-folder-title
     title: Bold folder title
     description: Show folder title in bold
     type: class-toggle
 */
 /* @settings
-name: "Catppuccin: Font Styles"
-id: catppuccin-font-styles
+name: "Everforest: Font Styles"
+id: everforest-font-styles
 settings:
   -
-    id: ctp-bold
+    id: efs-bold
     title: Bold font color
     description: Select your bold font color
     type: variable-select
     allowEmpty: false
-    default: var(--ctp-sapphire)
+    default: var(--efs-sapphire)
     options:
       -
         label: Rosewater
-        value: var(--ctp-rosewater)
+        value: var(--efs-rosewater)
       -
         label: Flamingo
-        value: var(--ctp-flamingo)
+        value: var(--efs-flamingo)
       -
         label: Pink
-        value: var(--ctp-pink)
+        value: var(--efs-pink)
       -
-        label: Mauve
-        value: var(--ctp-mauve)
+        label: Purple
+        value: var(--efs-mauve)
       -
         label: Red
-        value: var(--ctp-red)
+        value: var(--efs-red)
       -
         label: Maroon
-        value: var(--ctp-maroon)
+        value: var(--efs-maroon)
       -
-        label: Peach
-        value: var(--ctp-peach)
+        label: Orange
+        value: var(--efs-peach)
       -
         label: Yellow
-        value: var(--ctp-yellow)
+        value: var(--efs-yellow)
       -
         label: Green
-        value: var(--ctp-green)
+        value: var(--efs-green)
       -
-        label: Teal
-        value: var(--ctp-teal)
+        label: Aqua
+        value: var(--efs-teal)
       -
         label: Sky
-        value: var(--ctp-sky)
+        value: var(--efs-sky)
       -
         label: Sapphire
-        value: var(--ctp-sapphire)
+        value: var(--efs-sapphire)
       -
         label: Blue
-        value: var(--ctp-blue)
+        value: var(--efs-blue)
       -
         label: Lavender
-        value: var(--ctp-lavender)
+        value: var(--efs-lavender)
       -
         label: White
-        value: var(--ctp-text)
+        value: var(--efs-text)
       -
         label: Gray
-        value: var(--ctp-subtext0)
+        value: var(--efs-subtext0)
   -
-    id: ctp-italic
+    id: efs-italic
     title: Italic font color
     description: Select your italic font color
     type: variable-select
     allowEmpty: false
-    default: var(--ctp-green)
+    default: var(--efs-green)
     options:
       -
         label: Accent
-        value: var(--ctp-accent)
+        value: var(--efs-accent)
       -
         label: Rosewater
-        value: var(--ctp-rosewater)
+        value: var(--efs-rosewater)
       -
         label: Flamingo
-        value: var(--ctp-flamingo)
+        value: var(--efs-flamingo)
       -
         label: Pink
-        value: var(--ctp-pink)
+        value: var(--efs-pink)
       -
-        label: Mauve
-        value: var(--ctp-mauve)
+        label: Purple
+        value: var(--efs-mauve)
       -
         label: Red
-        value: var(--ctp-red)
+        value: var(--efs-red)
       -
         label: Maroon
-        value: var(--ctp-maroon)
+        value: var(--efs-maroon)
       -
-        label: Peach
-        value: var(--ctp-peach)
+        label: Orange
+        value: var(--efs-peach)
       -
         label: Yellow
-        value: var(--ctp-yellow)
+        value: var(--efs-yellow)
       -
         label: Green
-        value: var(--ctp-green)
+        value: var(--efs-green)
       -
-        label: Teal
-        value: var(--ctp-teal)
+        label: Aqua
+        value: var(--efs-teal)
       -
         label: Sky
-        value: var(--ctp-sky)
+        value: var(--efs-sky)
       -
         label: Sapphire
-        value: var(--ctp-sapphire)
+        value: var(--efs-sapphire)
       -
         label: Blue
-        value: var(--ctp-blue)
+        value: var(--efs-blue)
       -
         label: Lavender
-        value: var(--ctp-lavender)
+        value: var(--efs-lavender)
       -
         label: White
-        value: var(--ctp-text)
+        value: var(--efs-text)
       -
         label: Gray
-        value: var(--ctp-subtext0)
+        value: var(--efs-subtext0)
   -
-    id: ctp-strikethrough
+    id: efs-strikethrough
     title: Strikethrough color
     description: Select your strikethrough color
     type: variable-select
     allowEmpty: false
-    default: var(--ctp-maroon)
+    default: var(--efs-maroon)
     options:
       -
         label: Accent
-        value: var(--ctp-accent)
+        value: var(--efs-accent)
       -
         label: Rosewater
-        value: var(--ctp-rosewater)
+        value: var(--efs-rosewater)
       -
         label: Flamingo
-        value: var(--ctp-flamingo)
+        value: var(--efs-flamingo)
       -
         label: Pink
-        value: var(--ctp-pink)
+        value: var(--efs-pink)
       -
-        label: Mauve
-        value: var(--ctp-mauve)
+        label: Purple
+        value: var(--efs-mauve)
       -
         label: Red
-        value: var(--ctp-red)
+        value: var(--efs-red)
       -
         label: Maroon
-        value: var(--ctp-maroon)
+        value: var(--efs-maroon)
       -
-        label: Peach
-        value: var(--ctp-peach)
+        label: Orange
+        value: var(--efs-peach)
       -
         label: Yellow
-        value: var(--ctp-yellow)
+        value: var(--efs-yellow)
       -
         label: Green
-        value: var(--ctp-green)
+        value: var(--efs-green)
       -
-        label: Teal
-        value: var(--ctp-teal)
+        label: Aqua
+        value: var(--efs-teal)
       -
         label: Sky
-        value: var(--ctp-sky)
+        value: var(--efs-sky)
       -
         label: Sapphire
-        value: var(--ctp-sapphire)
+        value: var(--efs-sapphire)
       -
         label: Blue
-        value: var(--ctp-blue)
+        value: var(--efs-blue)
       -
         label: Lavender
-        value: var(--ctp-lavender)
+        value: var(--efs-lavender)
       -
         label: White
-        value: var(--ctp-text)
+        value: var(--efs-text)
       -
         label: Gray
-        value: var(--ctp-subtext0)
+        value: var(--efs-subtext0)
   -
-    id: ctp-blockquote
+    id: efs-blockquote
     title: Blockquote color
     description: Select your blockquote text color
     type: variable-select
     allowEmpty: false
-    default: var(--ctp-rosewater)
+    default: var(--efs-rosewater)
     options:
       -
         label: Accent
-        value: var(--ctp-accent)
+        value: var(--efs-accent)
       -
         label: Rosewater
-        value: var(--ctp-rosewater)
+        value: var(--efs-rosewater)
       -
         label: Flamingo
-        value: var(--ctp-flamingo)
+        value: var(--efs-flamingo)
       -
         label: Pink
-        value: var(--ctp-pink)
+        value: var(--efs-pink)
       -
-        label: Mauve
-        value: var(--ctp-mauve)
+        label: Purple
+        value: var(--efs-mauve)
       -
         label: Red
-        value: var(--ctp-red)
+        value: var(--efs-red)
       -
         label: Maroon
-        value: var(--ctp-maroon)
+        value: var(--efs-maroon)
       -
-        label: Peach
-        value: var(--ctp-peach)
+        label: Orange
+        value: var(--efs-peach)
       -
         label: Yellow
-        value: var(--ctp-yellow)
+        value: var(--efs-yellow)
       -
         label: Green
-        value: var(--ctp-green)
+        value: var(--efs-green)
       -
-        label: Teal
-        value: var(--ctp-teal)
+        label: Aqua
+        value: var(--efs-teal)
       -
         label: Sky
-        value: var(--ctp-sky)
+        value: var(--efs-sky)
       -
         label: Sapphire
-        value: var(--ctp-sapphire)
+        value: var(--efs-sapphire)
       -
         label: Blue
-        value: var(--ctp-blue)
+        value: var(--efs-blue)
       -
         label: Lavender
-        value: var(--ctp-lavender)
+        value: var(--efs-lavender)
       -
         label: White
-        value: var(--ctp-text)
+        value: var(--efs-text)
       -
         label: Gray
-        value: var(--ctp-subtext0)
+        value: var(--efs-subtext0)
   -
   */
 /* @settings
-name: "Catppuccin: File Name and Headings"
-id: catppuccin-heading-settings
+name: "Everforest: File Name and Headings"
+id: everforest-heading-settings
 settings:
   -
-    id: ctp-page-title
+    id: efs-page-title
     title: File name color
     description: Select your file name color
     type: variable-select
     allowEmpty: false
-    default: var(--ctp-text)
+    default: var(--efs-text)
     options:
       -
         label: Accent
-        value: var(--ctp-accent)
+        value: var(--efs-accent)
       -
         label: Rosewater
-        value: var(--ctp-rosewater)
+        value: var(--efs-rosewater)
       -
         label: Flamingo
-        value: var(--ctp-flamingo)
+        value: var(--efs-flamingo)
       -
         label: Pink
-        value: var(--ctp-pink)
+        value: var(--efs-pink)
       -
-        label: Mauve
-        value: var(--ctp-mauve)
+        label: Purple
+        value: var(--efs-mauve)
       -
         label: Red
-        value: var(--ctp-red)
+        value: var(--efs-red)
       -
         label: Maroon
-        value: var(--ctp-maroon)
+        value: var(--efs-maroon)
       -
-        label: Peach
-        value: var(--ctp-peach)
+        label: Orange
+        value: var(--efs-peach)
       -
         label: Yellow
-        value: var(--ctp-yellow)
+        value: var(--efs-yellow)
       -
         label: Green
-        value: var(--ctp-green)
+        value: var(--efs-green)
       -
-        label: Teal
-        value: var(--ctp-teal)
+        label: Aqua
+        value: var(--efs-teal)
       -
         label: Sky
-        value: var(--ctp-sky)
+        value: var(--efs-sky)
       -
         label: Sapphire
-        value: var(--ctp-sapphire)
+        value: var(--efs-sapphire)
       -
         label: Blue
-        value: var(--ctp-blue)
+        value: var(--efs-blue)
       -
         label: Lavender
-        value: var(--ctp-lavender)
+        value: var(--efs-lavender)
       -
         label: White
-        value: var(--ctp-text)
+        value: var(--efs-text)
       -
         label: Gray
-        value: var(--ctp-subtext0)
+        value: var(--efs-subtext0)
   -
-    id: ctp-h1
+    id: efs-h1
     title: H1 color
     description: Select your H1 color
     type: variable-select
     allowEmpty: false
-    default: var(--ctp-accent)
+    default: var(--efs-accent)
     options:
       -
         label: Accent
-        value: var(--ctp-accent)
+        value: var(--efs-accent)
       -
         label: Rosewater
-        value: var(--ctp-rosewater)
+        value: var(--efs-rosewater)
       -
         label: Flamingo
-        value: var(--ctp-flamingo)
+        value: var(--efs-flamingo)
       -
         label: Pink
-        value: var(--ctp-pink)
+        value: var(--efs-pink)
       -
-        label: Mauve
-        value: var(--ctp-mauve)
+        label: Purple
+        value: var(--efs-mauve)
       -
         label: Red
-        value: var(--ctp-red)
+        value: var(--efs-red)
       -
         label: Maroon
-        value: var(--ctp-maroon)
+        value: var(--efs-maroon)
       -
-        label: Peach
-        value: var(--ctp-peach)
+        label: Orange
+        value: var(--efs-peach)
       -
         label: Yellow
-        value: var(--ctp-yellow)
+        value: var(--efs-yellow)
       -
         label: Green
-        value: var(--ctp-green)
+        value: var(--efs-green)
       -
-        label: Teal
-        value: var(--ctp-teal)
+        label: Aqua
+        value: var(--efs-teal)
       -
         label: Sky
-        value: var(--ctp-sky)
+        value: var(--efs-sky)
       -
         label: Sapphire
-        value: var(--ctp-sapphire)
+        value: var(--efs-sapphire)
       -
         label: Blue
-        value: var(--ctp-blue)
+        value: var(--efs-blue)
       -
         label: Lavender
-        value: var(--ctp-lavender)
+        value: var(--efs-lavender)
       -
         label: White
-        value: var(--ctp-text)
+        value: var(--efs-text)
       -
         label: Gray
-        value: var(--ctp-subtext0)
+        value: var(--efs-subtext0)
   -
-    id: ctp-h2
+    id: efs-h2
     title: H2 color
     description: Select your H2 color
     type: variable-select
     allowEmpty: false
-    default: var(--ctp-accent)
+    default: var(--efs-accent)
     options:
       -
         label: Accent
-        value: var(--ctp-accent)
+        value: var(--efs-accent)
       -
         label: Rosewater
-        value: var(--ctp-rosewater)
+        value: var(--efs-rosewater)
       -
         label: Flamingo
-        value: var(--ctp-flamingo)
+        value: var(--efs-flamingo)
       -
         label: Pink
-        value: var(--ctp-pink)
+        value: var(--efs-pink)
       -
-        label: Mauve
-        value: var(--ctp-mauve)
+        label: Purple
+        value: var(--efs-mauve)
       -
         label: Red
-        value: var(--ctp-red)
+        value: var(--efs-red)
       -
         label: Maroon
-        value: var(--ctp-maroon)
+        value: var(--efs-maroon)
       -
-        label: Peach
-        value: var(--ctp-peach)
+        label: Orange
+        value: var(--efs-peach)
       -
         label: Yellow
-        value: var(--ctp-yellow)
+        value: var(--efs-yellow)
       -
         label: Green
-        value: var(--ctp-green)
+        value: var(--efs-green)
       -
-        label: Teal
-        value: var(--ctp-teal)
+        label: Aqua
+        value: var(--efs-teal)
       -
         label: Sky
-        value: var(--ctp-sky)
+        value: var(--efs-sky)
       -
         label: Sapphire
-        value: var(--ctp-sapphire)
+        value: var(--efs-sapphire)
       -
         label: Blue
-        value: var(--ctp-blue)
+        value: var(--efs-blue)
       -
         label: Lavender
-        value: var(--ctp-lavender)
+        value: var(--efs-lavender)
       -
         label: White
-        value: var(--ctp-text)
+        value: var(--efs-text)
       -
         label: Gray
-        value: var(--ctp-subtext0)
+        value: var(--efs-subtext0)
   -
-    id: ctp-h3
+    id: efs-h3
     title: H3 color
     description: Select your H3 color
     type: variable-select
     allowEmpty: false
-    default: var(--ctp-accent)
+    default: var(--efs-accent)
     options:
       -
         label: Accent
-        value: var(--ctp-accent)
+        value: var(--efs-accent)
       -
         label: Rosewater
-        value: var(--ctp-rosewater)
+        value: var(--efs-rosewater)
       -
         label: Flamingo
-        value: var(--ctp-flamingo)
+        value: var(--efs-flamingo)
       -
         label: Pink
-        value: var(--ctp-pink)
+        value: var(--efs-pink)
       -
-        label: Mauve
-        value: var(--ctp-mauve)
+        label: Purple
+        value: var(--efs-mauve)
       -
         label: Red
-        value: var(--ctp-red)
+        value: var(--efs-red)
       -
         label: Maroon
-        value: var(--ctp-maroon)
+        value: var(--efs-maroon)
       -
-        label: Peach
-        value: var(--ctp-peach)
+        label: Orange
+        value: var(--efs-peach)
       -
         label: Yellow
-        value: var(--ctp-yellow)
+        value: var(--efs-yellow)
       -
         label: Green
-        value: var(--ctp-green)
+        value: var(--efs-green)
       -
-        label: Teal
-        value: var(--ctp-teal)
+        label: Aqua
+        value: var(--efs-teal)
       -
         label: Sky
-        value: var(--ctp-sky)
+        value: var(--efs-sky)
       -
         label: Sapphire
-        value: var(--ctp-sapphire)
+        value: var(--efs-sapphire)
       -
         label: Blue
-        value: var(--ctp-blue)
+        value: var(--efs-blue)
       -
         label: Lavender
-        value: var(--ctp-lavender)
+        value: var(--efs-lavender)
       -
         label: White
-        value: var(--ctp-text)
+        value: var(--efs-text)
       -
         label: Gray
-        value: var(--ctp-subtext0)
+        value: var(--efs-subtext0)
   -
-    id: ctp-h4
+    id: efs-h4
     title: H4 color
     description: Select your H4 color
     type: variable-select
     allowEmpty: false
-    default: var(--ctp-accent)
+    default: var(--efs-accent)
     options:
       -
         label: Accent
-        value: var(--ctp-accent)
+        value: var(--efs-accent)
       -
         label: Rosewater
-        value: var(--ctp-rosewater)
+        value: var(--efs-rosewater)
       -
         label: Flamingo
-        value: var(--ctp-flamingo)
+        value: var(--efs-flamingo)
       -
         label: Pink
-        value: var(--ctp-pink)
+        value: var(--efs-pink)
       -
-        label: Mauve
-        value: var(--ctp-mauve)
+        label: Purple
+        value: var(--efs-mauve)
       -
         label: Red
-        value: var(--ctp-red)
+        value: var(--efs-red)
       -
         label: Maroon
-        value: var(--ctp-maroon)
+        value: var(--efs-maroon)
       -
-        label: Peach
-        value: var(--ctp-peach)
+        label: Orange
+        value: var(--efs-peach)
       -
         label: Yellow
-        value: var(--ctp-yellow)
+        value: var(--efs-yellow)
       -
         label: Green
-        value: var(--ctp-green)
+        value: var(--efs-green)
       -
-        label: Teal
-        value: var(--ctp-teal)
+        label: Aqua
+        value: var(--efs-teal)
       -
         label: Sky
-        value: var(--ctp-sky)
+        value: var(--efs-sky)
       -
         label: Sapphire
-        value: var(--ctp-sapphire)
+        value: var(--efs-sapphire)
       -
         label: Blue
-        value: var(--ctp-blue)
+        value: var(--efs-blue)
       -
         label: Lavender
-        value: var(--ctp-lavender)
+        value: var(--efs-lavender)
       -
         label: White
-        value: var(--ctp-text)
+        value: var(--efs-text)
       -
         label: Gray
-        value: var(--ctp-subtext0)
+        value: var(--efs-subtext0)
   -
-    id: ctp-h5
+    id: efs-h5
     title: H5 color
     description: Select your H5 color
     type: variable-select
     allowEmpty: false
-    default: var(--ctp-accent)
+    default: var(--efs-accent)
     options:
       -
         label: Accent
-        value: var(--ctp-accent)
+        value: var(--efs-accent)
       -
         label: Rosewater
-        value: var(--ctp-rosewater)
+        value: var(--efs-rosewater)
       -
         label: Flamingo
-        value: var(--ctp-flamingo)
+        value: var(--efs-flamingo)
       -
         label: Pink
-        value: var(--ctp-pink)
+        value: var(--efs-pink)
       -
-        label: Mauve
-        value: var(--ctp-mauve)
+        label: Purple
+        value: var(--efs-mauve)
       -
         label: Red
-        value: var(--ctp-red)
+        value: var(--efs-red)
       -
         label: Maroon
-        value: var(--ctp-maroon)
+        value: var(--efs-maroon)
       -
-        label: Peach
-        value: var(--ctp-peach)
+        label: Orange
+        value: var(--efs-peach)
       -
         label: Yellow
-        value: var(--ctp-yellow)
+        value: var(--efs-yellow)
       -
         label: Green
-        value: var(--ctp-green)
+        value: var(--efs-green)
       -
-        label: Teal
-        value: var(--ctp-teal)
+        label: Aqua
+        value: var(--efs-teal)
       -
         label: Sky
-        value: var(--ctp-sky)
+        value: var(--efs-sky)
       -
         label: Sapphire
-        value: var(--ctp-sapphire)
+        value: var(--efs-sapphire)
       -
         label: Blue
-        value: var(--ctp-blue)
+        value: var(--efs-blue)
       -
         label: Lavender
-        value: var(--ctp-lavender)
+        value: var(--efs-lavender)
       -
         label: White
-        value: var(--ctp-text)
+        value: var(--efs-text)
       -
         label: Gray
-        value: var(--ctp-subtext0)
+        value: var(--efs-subtext0)
   -
-    id: ctp-h6
+    id: efs-h6
     title: H6 color
     description: Select your H6 color
     type: variable-select
     allowEmpty: false
-    default: var(--ctp-accent)
+    default: var(--efs-accent)
     options:
       -
         label: Accent
-        value: var(--ctp-accent)
+        value: var(--efs-accent)
       -
         label: Rosewater
-        value: var(--ctp-rosewater)
+        value: var(--efs-rosewater)
       -
         label: Flamingo
-        value: var(--ctp-flamingo)
+        value: var(--efs-flamingo)
       -
         label: Pink
-        value: var(--ctp-pink)
+        value: var(--efs-pink)
       -
-        label: Mauve
-        value: var(--ctp-mauve)
+        label: Purple
+        value: var(--efs-mauve)
       -
         label: Red
-        value: var(--ctp-red)
+        value: var(--efs-red)
       -
         label: Maroon
-        value: var(--ctp-maroon)
+        value: var(--efs-maroon)
       -
-        label: Peach
-        value: var(--ctp-peach)
+        label: Orange
+        value: var(--efs-peach)
       -
         label: Yellow
-        value: var(--ctp-yellow)
+        value: var(--efs-yellow)
       -
         label: Green
-        value: var(--ctp-green)
+        value: var(--efs-green)
       -
-        label: Teal
-        value: var(--ctp-teal)
+        label: Aqua
+        value: var(--efs-teal)
       -
         label: Sky
-        value: var(--ctp-sky)
+        value: var(--efs-sky)
       -
         label: Sapphire
-        value: var(--ctp-sapphire)
+        value: var(--efs-sapphire)
       -
         label: Blue
-        value: var(--ctp-blue)
+        value: var(--efs-blue)
       -
         label: Lavender
-        value: var(--ctp-lavender)
+        value: var(--efs-lavender)
       -
         label: White
-        value: var(--ctp-text)
+        value: var(--efs-text)
       -
         label: Gray
-        value: var(--ctp-subtext0)
+        value: var(--efs-subtext0)
 */
 /* @settings
-name: "Catppuccin: PDF Settings"
-id: catppuccin-pdf
+name: "Everforest: PDF Settings"
+id: everforest-pdf
 settings:
   -
-    id: ctp-seamless-pdf
+    id: efs-seamless-pdf
     title: Remove borders around PDF pages
     description: View PDFs without borders, akin to the Minimal theme's "seamless" setting
     type: class-toggle
   -
-    id: ctp-pdf-darken
+    id: efs-pdf-darken
     title: Darken PDF background
     description: When using a dark flavor, inverts a PDF's background color. This might be helpful when using a PDF with a light background in dark mode Obsidian, depending on your preferences and the colors present in the PDF
     type: class-toggle
   -
-    id: ctp-pdf-blend
+    id: efs-pdf-blend
     title: Blend PDF background
     description: When using light mode, attempts to blend the theme's background color into the PDF
     type: class-toggle
 */
 /* @settings
-name: "Catppuccin: Tag Styles"
-id: catppuccin-tag-styles
+name: "Everforest: Tag Styles"
+id: everforest-tag-styles
 settings:
   -
-    id: ctp-tag-pill
+    id: efs-tag-pill
     title: Pill-shaped tags
     description: Make tags stand out with a pill-shaped appearance, reverts to Obsidian's default style
     type: class-toggle
   -
-    id: ctp-tag-pill-color
+    id: efs-tag-pill-color
     title: Tag text color
     description: Select your tag text color
     type: variable-select
     allowEmpty: false
-    default: var(--ctp-accent)
+    default: var(--efs-accent)
     options:
       -
         label: Accent
-        value: var(--ctp-accent)
+        value: var(--efs-accent)
       -
         label: Rosewater
-        value: var(--ctp-rosewater)
+        value: var(--efs-rosewater)
       -
         label: Flamingo
-        value: var(--ctp-flamingo)
+        value: var(--efs-flamingo)
       -
         label: Pink
-        value: var(--ctp-pink)
+        value: var(--efs-pink)
       -
-        label: Mauve
-        value: var(--ctp-mauve)
+        label: Purple
+        value: var(--efs-mauve)
       -
         label: Red
-        value: var(--ctp-red)
+        value: var(--efs-red)
       -
         label: Maroon
-        value: var(--ctp-maroon)
+        value: var(--efs-maroon)
       -
-        label: Peach
-        value: var(--ctp-peach)
+        label: Orange
+        value: var(--efs-peach)
       -
         label: Yellow
-        value: var(--ctp-yellow)
+        value: var(--efs-yellow)
       -
         label: Green
-        value: var(--ctp-green)
+        value: var(--efs-green)
       -
-        label: Teal
-        value: var(--ctp-teal)
+        label: Aqua
+        value: var(--efs-teal)
       -
         label: Sky
-        value: var(--ctp-sky)
+        value: var(--efs-sky)
       -
         label: Sapphire
-        value: var(--ctp-sapphire)
+        value: var(--efs-sapphire)
       -
         label: Blue
-        value: var(--ctp-blue)
+        value: var(--efs-blue)
       -
         label: Lavender
-        value: var(--ctp-lavender)
+        value: var(--efs-lavender)
       -
         label: White
-        value: var(--ctp-text)
+        value: var(--efs-text)
       -
         label: Gray
-        value: var(--ctp-subtext0)
+        value: var(--efs-subtext0)
 */
 /* @settings
 
-name: "Catppuccin: Credits and Source Code"
+name: "Everforest: Credits and Source Code"
 id: source-code
 settings:
   -
-    id: catppuccin-theme-credits-link
+    id: everforest-theme-credits-link
     title: Credits and Source Code
     type: heading
     level: 1
     collapsed: false
-    description: 💎 View and contribute to the port at github.com/catppuccin/obsidian
+    description: 💎 View and contribute to the port at github.com/stellaaash/everforest-obsidian
 */
 .theme-light,
-.theme-light.ctp-latte {
-  --ctp-rosewater: 220, 138, 120;
-  --ctp-flamingo: 221, 120, 120;
-  --ctp-pink: 234, 118, 203;
-  --ctp-mauve: 136, 57, 239;
-  --ctp-red: 210, 15, 57;
-  --ctp-maroon: 230, 69, 83;
-  --ctp-peach: 254, 100, 11;
-  --ctp-yellow: 223, 142, 29;
-  --ctp-green: 64, 160, 43;
-  --ctp-teal: 23, 146, 153;
-  --ctp-sky: 4, 165, 229;
-  --ctp-sapphire: 32, 159, 181;
-  --ctp-blue: 30, 102, 245;
-  --ctp-lavender: 114, 135, 253;
-  --ctp-text: 76, 79, 105;
-  --ctp-subtext1: 92, 95, 119;
-  --ctp-subtext0: 108, 111, 133;
-  --ctp-overlay2: 124, 127, 147;
-  --ctp-overlay1: 140, 143, 161;
-  --ctp-overlay0: 156, 160, 176;
-  --ctp-surface2: 172, 176, 190;
-  --ctp-surface1: 188, 192, 204;
-  --ctp-surface0: 204, 208, 218;
-  --ctp-base: 239, 241, 245;
-  --ctp-mantle: 230, 233, 239;
-  --ctp-crust: 220, 224, 232;
-  --hex-pink: #ea76cb;
-  --hex-mauve: #8839ef;
-  --hex-red: #d20f39;
-  --hex-peach: #fe640b;
-  --hex-yellow: #df8e1d;
-  --hex-green: #40a02b;
-  --hex-teal: #179299;
-  --hex-sky: #04a5e5;
-  --hex-sapphire: #209fb5;
-  --hex-blue: #1e66f5;
-  --hex-lavender: #7287fd;
+.theme-light.efs-light {
+  --efs-rosewater: 218, 152, 137;
+  --efs-flamingo: 225, 107, 104;
+  --efs-pink: 232, 98, 150;
+  --efs-mauve: 223, 105, 186;
+  --efs-red: 248, 85, 82;
+  --efs-maroon: 247, 99, 67;
+  --efs-peach: 245, 125, 38;
+  --efs-yellow: 223, 160, 0;
+  --efs-green: 141, 161, 1;
+  --efs-teal: 53, 167, 124;
+  --efs-sky: 55, 159, 153;
+  --efs-sapphire: 56, 154, 175;
+  --efs-blue: 58, 148, 197;
+  --efs-lavender: 109, 78, 210;
+  --efs-text: 92, 106, 114;
+  --efs-subtext1: 105, 119, 119;
+  --efs-subtext0: 117, 132, 124;
+  --efs-overlay2: 130, 145, 129;
+  --efs-overlay1: 147, 159, 145;
+  --efs-overlay0: 166, 176, 160;
+  --efs-surface2: 189, 195, 175;
+  --efs-surface1: 224, 220, 199;
+  --efs-surface0: 230, 226, 204;
+  --efs-base: 253, 246, 227;
+  --efs-mantle: 244, 240, 217;
+  --efs-crust: 239, 235, 212;
+  --hex-pink: #e86296;
+  --hex-mauve: #df69ba;
+  --hex-red: #f85552;
+  --hex-peach: #f57d26;
+  --hex-yellow: #dfa000;
+  --hex-green: #8da101;
+  --hex-teal: #35a77c;
+  --hex-sky: #379f99;
+  --hex-sapphire: #389aaf;
+  --hex-blue: #3a94c5;
+  --hex-lavender: #6d4ed2;
 }
 
-.theme-dark.ctp-frappe {
-  --ctp-rosewater: 242, 213, 207;
-  --ctp-flamingo: 238, 190, 190;
-  --ctp-pink: 244, 184, 228;
-  --ctp-mauve: 202, 158, 230;
-  --ctp-red: 231, 130, 132;
-  --ctp-maroon: 234, 153, 156;
-  --ctp-peach: 239, 159, 118;
-  --ctp-yellow: 229, 200, 144;
-  --ctp-green: 166, 209, 137;
-  --ctp-teal: 129, 200, 190;
-  --ctp-sky: 153, 209, 219;
-  --ctp-sapphire: 133, 193, 220;
-  --ctp-blue: 140, 170, 238;
-  --ctp-lavender: 186, 187, 241;
-  --ctp-text: 198, 208, 245;
-  --ctp-subtext1: 181, 191, 226;
-  --ctp-subtext0: 165, 173, 206;
-  --ctp-overlay2: 148, 156, 187;
-  --ctp-overlay1: 131, 139, 167;
-  --ctp-overlay0: 115, 121, 148;
-  --ctp-surface2: 98, 104, 128;
-  --ctp-surface1: 81, 87, 109;
-  --ctp-surface0: 65, 69, 89;
-  --ctp-base: 48, 52, 70;
-  --ctp-mantle: 41, 44, 60;
-  --ctp-crust: 35, 38, 52;
-  --hex-pink: #f4b8e4;
-  --hex-mauve: #ca9ee6;
-  --hex-red: #e78284;
-  --hex-peach: #ef9f76;
-  --hex-yellow: #e5c890;
-  --hex-green: #a6d189;
-  --hex-teal: #81c8be;
-  --hex-sky: #99d1db;
-  --hex-sapphire: #85c1dc;
-  --hex-blue: #8caaee;
-  --hex-lavender: #babbf1;
-}
-
-.theme-dark.ctp-macchiato {
-  --ctp-rosewater: 244, 219, 214;
-  --ctp-flamingo: 240, 198, 198;
-  --ctp-pink: 245, 189, 230;
-  --ctp-mauve: 198, 160, 246;
-  --ctp-red: 237, 135, 150;
-  --ctp-maroon: 238, 153, 160;
-  --ctp-peach: 245, 169, 127;
-  --ctp-yellow: 238, 212, 159;
-  --ctp-green: 166, 218, 149;
-  --ctp-teal: 139, 213, 202;
-  --ctp-sky: 145, 215, 227;
-  --ctp-sapphire: 125, 196, 228;
-  --ctp-blue: 138, 173, 244;
-  --ctp-lavender: 183, 189, 248;
-  --ctp-text: 202, 211, 245;
-  --ctp-subtext1: 184, 192, 224;
-  --ctp-subtext0: 165, 173, 203;
-  --ctp-overlay2: 147, 154, 183;
-  --ctp-overlay1: 128, 135, 162;
-  --ctp-overlay0: 110, 115, 141;
-  --ctp-surface2: 91, 96, 120;
-  --ctp-surface1: 73, 77, 100;
-  --ctp-surface0: 54, 58, 79;
-  --ctp-base: 36, 39, 58;
-  --ctp-mantle: 30, 32, 48;
-  --ctp-crust: 24, 25, 38;
-  --hex-pink: #f5bde6;
-  --hex-mauve: #c6a0f6;
-  --hex-red: #ed8796;
-  --hex-peach: #f5a97f;
-  --hex-yellow: #eed49f;
-  --hex-green: #a6da95;
-  --hex-teal: #8bd5ca;
-  --hex-sky: #91d7e3;
-  --hex-sapphire: #7dc4e4;
-  --hex-blue: #8aadf4;
-  --hex-lavender: #b7bdf8;
+.theme-dark.efs-soft {
+  --efs-rosewater: 208, 178, 173;
+  --efs-flamingo: 211, 145, 147;
+  --efs-pink: 220, 144, 163;
+  --efs-mauve: 214, 153, 182;
+  --efs-red: 230, 126, 128;
+  --efs-maroon: 230, 135, 124;
+  --efs-peach: 230, 152, 117;
+  --efs-yellow: 219, 188, 127;
+  --efs-green: 167, 192, 128;
+  --efs-teal: 131, 192, 146;
+  --efs-sky: 129, 190, 159;
+  --efs-sapphire: 128, 188, 169;
+  --efs-blue: 127, 187, 179;
+  --efs-lavender: 142, 138, 200;
+  --efs-text: 211, 198, 170;
+  --efs-subtext1: 193, 188, 167;
+  --efs-subtext0: 175, 179, 163;
+  --efs-overlay2: 157, 169, 160;
+  --efs-overlay1: 133, 146, 137;
+  --efs-overlay0: 122, 132, 120;
+  --efs-surface2: 93, 107, 102;
+  --efs-surface1: 77, 89, 96;
+  --efs-surface0: 58, 70, 76;
+  --efs-base: 51, 60, 67;
+  --efs-mantle: 41, 49, 54;
+  --efs-crust: 35, 42, 46;
+  --hex-pink: #dc90a3;
+  --hex-mauve: #d699b6;
+  --hex-red: #e67e80;
+  --hex-peach: #e69875;
+  --hex-yellow: #dbbc7f;
+  --hex-green: #a7c080;
+  --hex-teal: #83c092;
+  --hex-sky: #81be9f;
+  --hex-sapphire: #80bca9;
+  --hex-blue: #7fbbb3;
+  --hex-lavender: #8e8ac8;
 }
 
 .theme-dark,
-.theme-dark.ctp-mocha {
-  --ctp-rosewater: 245, 224, 220;
-  --ctp-flamingo: 242, 205, 205;
-  --ctp-pink: 245, 194, 231;
-  --ctp-mauve: 203, 166, 247;
-  --ctp-red: 243, 139, 168;
-  --ctp-maroon: 235, 160, 172;
-  --ctp-peach: 250, 179, 135;
-  --ctp-yellow: 249, 226, 175;
-  --ctp-green: 166, 227, 161;
-  --ctp-teal: 148, 226, 213;
-  --ctp-sky: 137, 220, 235;
-  --ctp-sapphire: 116, 199, 236;
-  --ctp-blue: 137, 180, 250;
-  --ctp-lavender: 180, 190, 254;
-  --ctp-text: 205, 214, 244;
-  --ctp-subtext1: 186, 194, 222;
-  --ctp-subtext0: 166, 173, 200;
-  --ctp-overlay2: 147, 153, 178;
-  --ctp-overlay1: 127, 132, 156;
-  --ctp-overlay0: 108, 112, 134;
-  --ctp-surface2: 88, 91, 112;
-  --ctp-surface1: 69, 71, 90;
-  --ctp-surface0: 49, 50, 68;
-  --ctp-base: 30, 30, 46;
-  --ctp-mantle: 24, 24, 37;
-  --ctp-crust: 17, 17, 27;
-  --hex-pink: #f5c2e7;
-  --hex-mauve: #cba6f7;
-  --hex-red: #f38ba8;
-  --hex-peach: #fab387;
-  --hex-yellow: #f9e2af;
-  --hex-green: #a6e3a1;
-  --hex-teal: #94e2d5;
-  --hex-sky: #89dceb;
-  --hex-sapphire: #74c7ec;
-  --hex-blue: #89b4fa;
-  --hex-lavender: #b4befe;
+.theme-dark.efs-medium {
+  --efs-rosewater: 208, 178, 173;
+  --efs-flamingo: 211, 145, 147;
+  --efs-pink: 220, 144, 163;
+  --efs-mauve: 214, 153, 182;
+  --efs-red: 230, 126, 128;
+  --efs-maroon: 230, 135, 124;
+  --efs-peach: 230, 152, 117;
+  --efs-yellow: 219, 188, 127;
+  --efs-green: 167, 192, 128;
+  --efs-teal: 131, 192, 146;
+  --efs-sky: 129, 190, 159;
+  --efs-sapphire: 128, 188, 169;
+  --efs-blue: 127, 187, 179;
+  --efs-lavender: 142, 138, 200;
+  --efs-text: 211, 198, 170;
+  --efs-subtext1: 193, 188, 167;
+  --efs-subtext0: 175, 179, 163;
+  --efs-overlay2: 157, 169, 160;
+  --efs-overlay1: 133, 146, 137;
+  --efs-overlay0: 122, 132, 120;
+  --efs-surface2: 86, 99, 95;
+  --efs-surface1: 71, 82, 88;
+  --efs-surface0: 52, 63, 68;
+  --efs-base: 45, 53, 59;
+  --efs-mantle: 35, 42, 46;
+  --efs-crust: 30, 35, 38;
+  --hex-pink: #dc90a3;
+  --hex-mauve: #d699b6;
+  --hex-red: #e67e80;
+  --hex-peach: #e69875;
+  --hex-yellow: #dbbc7f;
+  --hex-green: #a7c080;
+  --hex-teal: #83c092;
+  --hex-sky: #81be9f;
+  --hex-sapphire: #80bca9;
+  --hex-blue: #7fbbb3;
+  --hex-lavender: #8e8ac8;
+}
+
+.theme-dark.efs-hard {
+  --efs-rosewater: 208, 178, 173;
+  --efs-flamingo: 211, 145, 147;
+  --efs-pink: 220, 144, 163;
+  --efs-mauve: 214, 153, 182;
+  --efs-red: 230, 126, 128;
+  --efs-maroon: 230, 135, 124;
+  --efs-peach: 230, 152, 117;
+  --efs-yellow: 219, 188, 127;
+  --efs-green: 167, 192, 128;
+  --efs-teal: 131, 192, 146;
+  --efs-sky: 129, 190, 159;
+  --efs-sapphire: 128, 188, 169;
+  --efs-blue: 127, 187, 179;
+  --efs-lavender: 142, 138, 200;
+  --efs-text: 211, 198, 170;
+  --efs-subtext1: 193, 188, 167;
+  --efs-subtext0: 175, 179, 163;
+  --efs-overlay2: 157, 169, 160;
+  --efs-overlay1: 133, 146, 137;
+  --efs-overlay0: 122, 132, 120;
+  --efs-surface2: 79, 91, 88;
+  --efs-surface1: 65, 75, 80;
+  --efs-surface0: 46, 56, 60;
+  --efs-base: 39, 46, 51;
+  --efs-mantle: 30, 35, 38;
+  --efs-crust: 24, 28, 31;
+  --hex-pink: #dc90a3;
+  --hex-mauve: #d699b6;
+  --hex-red: #e67e80;
+  --hex-peach: #e69875;
+  --hex-yellow: #dbbc7f;
+  --hex-green: #a7c080;
+  --hex-teal: #83c092;
+  --hex-sky: #81be9f;
+  --hex-sapphire: #80bca9;
+  --hex-blue: #7fbbb3;
+  --hex-lavender: #8e8ac8;
 }
 
 .theme-light,
 .theme-dark {
-  --color-red-rgb: var(--ctp-red);
+  --color-red-rgb: var(--efs-red);
   --color-red: var(--hex-red);
-  --color-orange-rgb: var(--ctp-peach);
+  --color-orange-rgb: var(--efs-peach);
   --color-orange: var(--hex-peach);
-  --color-yellow-rgb: var(--ctp-yellow);
+  --color-yellow-rgb: var(--efs-yellow);
   --color-yellow: var(--hex-yellow);
-  --color-green-rgb: var(--ctp-green);
+  --color-green-rgb: var(--efs-green);
   --color-green: var(--hex-green);
-  --color-cyan-rgb: var(--ctp-sapphire);
+  --color-cyan-rgb: var(--efs-sapphire);
   --color-cyan: var(--hex-sapphire);
-  --color-blue-rgb: var(--ctp-blue);
+  --color-blue-rgb: var(--efs-blue);
   --color-blue: var(--hex-blue);
-  --color-purple-rgb: var(--ctp-mauve);
+  --color-purple-rgb: var(--efs-mauve);
   --color-purple: var(--hex-mauve);
-  --color-pink-rgb: var(--ctp-pink);
+  --color-pink-rgb: var(--efs-pink);
   --color-pink: var(--hex-pink);
 }
 
 /* ------------------Selecting Accents------------------- */
-.ctp-full-palette {
-  --ctp-accent: var(--ctp-lavender);
+.efs-full-palette {
+  --efs-accent: var(--efs-lavender);
 }
 
-.ctp-accent-rosewater {
-  --ctp-accent: var(--ctp-rosewater);
+.efs-accent-rosewater {
+  --efs-accent: var(--efs-rosewater);
 }
 
-.ctp-accent-flamingo {
-  --ctp-accent: var(--ctp-flamingo);
+.efs-accent-flamingo {
+  --efs-accent: var(--efs-flamingo);
 }
 
-.ctp-accent-pink {
-  --ctp-accent: var(--ctp-pink);
+.efs-accent-pink {
+  --efs-accent: var(--efs-pink);
 }
 
-.ctp-accent-mauve {
-  --ctp-accent: var(--ctp-mauve);
+.efs-accent-mauve {
+  --efs-accent: var(--efs-mauve);
 }
 
-.ctp-accent-red {
-  --ctp-accent: var(--ctp-red);
+.efs-accent-red {
+  --efs-accent: var(--efs-red);
 }
 
-.ctp-accent-maroon {
-  --ctp-accent: var(--ctp-maroon);
+.efs-accent-maroon {
+  --efs-accent: var(--efs-maroon);
 }
 
-.ctp-accent-peach {
-  --ctp-accent: var(--ctp-peach);
+.efs-accent-peach {
+  --efs-accent: var(--efs-peach);
 }
 
-.ctp-accent-yellow {
-  --ctp-accent: var(--ctp-yellow);
+.efs-accent-yellow {
+  --efs-accent: var(--efs-yellow);
 }
 
-.ctp-accent-green {
-  --ctp-accent: var(--ctp-green);
+.efs-accent-green {
+  --efs-accent: var(--efs-green);
 }
 
-.ctp-accent-teal {
-  --ctp-accent: var(--ctp-teal);
+.efs-accent-teal {
+  --efs-accent: var(--efs-teal);
 }
 
-.ctp-accent-sky {
-  --ctp-accent: var(--ctp-sky);
+.efs-accent-sky {
+  --efs-accent: var(--efs-sky);
 }
 
-.ctp-accent-sapphire {
-  --ctp-accent: var(--ctp-sapphire);
+.efs-accent-sapphire {
+  --efs-accent: var(--efs-sapphire);
 }
 
-.ctp-accent-blue {
-  --ctp-accent: var(--ctp-blue);
+.efs-accent-blue {
+  --efs-accent: var(--efs-blue);
 }
 
-.ctp-accent-lavender {
-  --ctp-accent: var(--ctp-lavender);
+.efs-accent-lavender {
+  --efs-accent: var(--efs-lavender);
 }
 
 /* ------------------Actual Configs-------------------- */
 .theme-dark,
 .theme-light {
-  --background-primary: rgb(var(--ctp-base));
-  --background-primary-rgb: var(--ctp-base);
-  --background-primary-alt: rgb(var(--ctp-mantle));
-  --background-secondary: rgb(var(--ctp-mantle));
-  --background-secondary-alt: rgb(var(--ctp-crust));
-  --background-modifier-border: rgb(var(--ctp-surface0));
-  --background-modifier-form-field: rgb(var(--ctp-crust), 30%);
-  --background-modifier-form-field-highlighted: rgb(var(--ctp-crust), 22%);
-  --background-modifier-box-shadow: rgb(var(--ctp-crust), 30%);
-  --background-modifier-success: rgb(var(--ctp-green), 90%);
-  --background-modifier-success-rgb: var(--ctp-green);
-  --background-modifier-error: rgb(var(--ctp-red), 90%);
-  --background-modifier-error-rgb: var(--ctp-red);
-  --background-modifier-error-hover: rgb(var(--ctp-red), 100%);
-  --background-modifier-cover: rgb(var(--ctp-crust), 90%);
-  --color-accent: rgb(var(--ctp-accent));
-  --color-accent-1: rgb(var(--ctp-accent));
-  --color-accent-2: rgb(var(--ctp-accent), 90%);
-  --text-accent: rgb(var(--ctp-accent));
-  --text-accent-hover: rgb(var(--ctp-accent));
-  --text-normal: rgb(var(--ctp-text));
-  --text-muted: rgb(var(--ctp-subtext0));
-  --text-muted-rgb: var(--ctp-subtext0);
-  --text-faint: rgb(var(--ctp-surface1));
-  --text-error: rgb(var(--ctp-red));
-  --text-error-hover: rgb(var(--ctp-red), 80%);
-  --text-highlight-bg: rgb(var(--ctp-rosewater), 100%);
-  --text-highlight-bg-active: rgb(var(--ctp-rosewater), 100%);
-  --text-selection: rgb(var(--ctp-overlay2), 30%);
-  --text-on-accent: rgb(var(--ctp-mantle));
-  --text-on-accent-inverted: rgb(var(--ctp-mantle));
-  --interactive-normal: rgb(var(--ctp-surface0));
-  --interactive-hover: rgb(var(--ctp-surface1));
-  --interactive-accent: rgb(var(--ctp-accent));
-  --interactive-accent-rgb: var(--ctp-accent);
-  --interactive-accent-hover: rgb(var(--ctp-accent));
-  --interactive-success: rgb(var(--ctp-green));
-  --scrollbar-active-thumb-bg: rgb(var(--ctp-text), 20%);
-  --scrollbar-bg: rgb(var(--ctp-text), 5%);
-  --scrollbar-thumb-bg: rgb(var(--ctp-text), 10%);
-  --mono-rgb-0: var(--ctp-crust);
-  --mono-rgb-100: var(--ctp-text);
-  --color-red-rgb: var(--ctp-red);
-  --color-red: rgb(var(--ctp-red));
-  --color-green-rgb: var(--ctp-green);
-  --color-green: rgb(var(--ctp-green));
-  --color-orange: rgb(var(--ctp-peach));
-  --color-yellow: rgb(var(--ctp-yellow));
-  --color-cyan: rgb(var(--ctp-sky));
-  --color-blue: rgb(var(--ctp-blue));
-  --color-purple: rgb(var(--ctp-lavender));
-  --color-pink: rgb(var(--ctp-pink));
-  --color-base-00: rgb(var(--ctp-crust));
-  --color-base-10: rgb(var(--ctp-mantle));
-  --color-base-20: rgb(var(--ctp-base));
-  --color-base-25: rgb(var(--ctp-surface0));
-  --color-base-30: rgb(var(--ctp-surface1));
-  --color-base-35: rgb(var(--ctp-surface2));
-  --color-base-40: rgb(var(--ctp-overlay0));
-  --color-base-50: rgb(var(--ctp-overlay1));
-  --color-base-60: rgb(var(--ctp-overlay2));
-  --color-base-70: rgb(var(--ctp-subtext0));
-  --color-base-100: rgb(var(--ctp-text));
+  --background-primary: rgb(var(--efs-base));
+  --background-primary-rgb: var(--efs-base);
+  --background-primary-alt: rgb(var(--efs-mantle));
+  --background-secondary: rgb(var(--efs-mantle));
+  --background-secondary-alt: rgb(var(--efs-crust));
+  --background-modifier-border: rgb(var(--efs-surface0));
+  --background-modifier-form-field: rgb(var(--efs-crust), 30%);
+  --background-modifier-form-field-highlighted: rgb(var(--efs-crust), 22%);
+  --background-modifier-box-shadow: rgb(var(--efs-crust), 30%);
+  --background-modifier-success: rgb(var(--efs-green), 90%);
+  --background-modifier-success-rgb: var(--efs-green);
+  --background-modifier-error: rgb(var(--efs-red), 90%);
+  --background-modifier-error-rgb: var(--efs-red);
+  --background-modifier-error-hover: rgb(var(--efs-red), 100%);
+  --background-modifier-cover: rgb(var(--efs-crust), 90%);
+  --color-accent: rgb(var(--efs-accent));
+  --color-accent-1: rgb(var(--efs-accent));
+  --color-accent-2: rgb(var(--efs-accent), 90%);
+  --text-accent: rgb(var(--efs-accent));
+  --text-accent-hover: rgb(var(--efs-accent));
+  --text-normal: rgb(var(--efs-text));
+  --text-muted: rgb(var(--efs-subtext0));
+  --text-muted-rgb: var(--efs-subtext0);
+  --text-faint: rgb(var(--efs-surface1));
+  --text-error: rgb(var(--efs-red));
+  --text-error-hover: rgb(var(--efs-red), 80%);
+  --text-highlight-bg: rgb(var(--efs-rosewater), 100%);
+  --text-highlight-bg-active: rgb(var(--efs-rosewater), 100%);
+  --text-selection: rgb(var(--efs-overlay2), 30%);
+  --text-on-accent: rgb(var(--efs-mantle));
+  --text-on-accent-inverted: rgb(var(--efs-mantle));
+  --interactive-normal: rgb(var(--efs-surface0));
+  --interactive-hover: rgb(var(--efs-surface1));
+  --interactive-accent: rgb(var(--efs-accent));
+  --interactive-accent-rgb: var(--efs-accent);
+  --interactive-accent-hover: rgb(var(--efs-accent));
+  --interactive-success: rgb(var(--efs-green));
+  --scrollbar-active-thumb-bg: rgb(var(--efs-text), 20%);
+  --scrollbar-bg: rgb(var(--efs-text), 5%);
+  --scrollbar-thumb-bg: rgb(var(--efs-text), 10%);
+  --mono-rgb-0: var(--efs-crust);
+  --mono-rgb-100: var(--efs-text);
+  --color-red-rgb: var(--efs-red);
+  --color-red: rgb(var(--efs-red));
+  --color-green-rgb: var(--efs-green);
+  --color-green: rgb(var(--efs-green));
+  --color-orange: rgb(var(--efs-peach));
+  --color-yellow: rgb(var(--efs-yellow));
+  --color-cyan: rgb(var(--efs-sky));
+  --color-blue: rgb(var(--efs-blue));
+  --color-purple: rgb(var(--efs-lavender));
+  --color-pink: rgb(var(--efs-pink));
+  --color-base-00: rgb(var(--efs-crust));
+  --color-base-10: rgb(var(--efs-mantle));
+  --color-base-20: rgb(var(--efs-base));
+  --color-base-25: rgb(var(--efs-surface0));
+  --color-base-30: rgb(var(--efs-surface1));
+  --color-base-35: rgb(var(--efs-surface2));
+  --color-base-40: rgb(var(--efs-overlay0));
+  --color-base-50: rgb(var(--efs-overlay1));
+  --color-base-60: rgb(var(--efs-overlay2));
+  --color-base-70: rgb(var(--efs-subtext0));
+  --color-base-100: rgb(var(--efs-text));
 }
 
 .theme-dark {
@@ -1745,7 +1745,7 @@ settings:
 }
 
 /* ------------------CSS Snippets------------------ */
-.ctp-bold-folder-title .nav-folder-title-content {
+.efs-bold-folder-title .nav-folder-title-content {
   font-weight: var(--font-bold);
 }
 
@@ -1774,18 +1774,18 @@ strong,
 .cm-strong,
 .cm-s-obsidian span.cm-formatting-strong,
 .cm-s-obsidian span.cm-strong {
-  --bold-color: rgb(var(--ctp-bold, var(--ctp-sapphire)));
-  color: rgb(var(--ctp-bold, var(--ctp-sapphire)));
+  --bold-color: rgb(var(--efs-bold, var(--efs-sapphire)));
+  color: rgb(var(--efs-bold, var(--efs-sapphire)));
 }
 
 em,
 .cm-em {
-  --italic-color: rgb(var(--ctp-italic, var(--ctp-green)));
+  --italic-color: rgb(var(--efs-italic, var(--efs-green)));
 }
 
 del,
 .cm-strikethrough {
-  color: rgb(var(--ctp-strikethrough, var(--ctp-maroon)));
+  color: rgb(var(--efs-strikethrough, var(--efs-maroon)));
 }
 
 .cm-s-obsidian .cm-link.cm-strikethrough {
@@ -1794,14 +1794,14 @@ del,
 
 .markdown-rendered blockquote,
 .cm-s-obsidian span.cm-quote {
-  --blockquote-border-color: rgb(var(--ctp-blockquote, var(--ctp-accent)));
-  --blockquote-color: rgb(var(--ctp-blockquote, var(--ctp-rosewater)));
+  --blockquote-border-color: rgb(var(--efs-blockquote, var(--efs-accent)));
+  --blockquote-color: rgb(var(--efs-blockquote, var(--efs-rosewater)));
 }
 
 .cm-em.cm-strong,
 strong > em,
 em > strong {
-  color: rgb(var(--ctp-teal));
+  color: rgb(var(--efs-teal));
 }
 
 .markdown-source-view ol > li,
@@ -1815,14 +1815,14 @@ em > strong {
 }
 
 .inline-title {
-  --inline-title-color: rgb(var(--ctp-page-title, var(--ctp-text)));
+  --inline-title-color: rgb(var(--efs-page-title, var(--efs-text)));
 }
 
 h1,
 .markdown-rendered h1,
 .HyperMD-header-1,
 .HyperMD-list-line .cm-header-1 {
-  --h1-color: rgb(var(--ctp-h1, var(--ctp-accent)));
+  --h1-color: rgb(var(--efs-h1, var(--efs-accent)));
   line-height: var(--h1-line-height);
 }
 
@@ -1830,7 +1830,7 @@ h2,
 .markdown-rendered h2,
 .HyperMD-header-2,
 .HyperMD-list-line .cm-header-2 {
-  --h2-color: rgb(var(--ctp-h2, var(--ctp-accent)));
+  --h2-color: rgb(var(--efs-h2, var(--efs-accent)));
   line-height: var(--h2-line-height);
 }
 
@@ -1838,7 +1838,7 @@ h3,
 .markdown-rendered h3,
 .HyperMD-header-3,
 .HyperMD-list-line .cm-header-3 {
-  --h3-color: rgb(var(--ctp-h3, var(--ctp-accent)));
+  --h3-color: rgb(var(--efs-h3, var(--efs-accent)));
   line-height: var(--h3-line-height);
 }
 
@@ -1846,7 +1846,7 @@ h4,
 .markdown-rendered h4,
 .HyperMD-header-4,
 .HyperMD-list-line .cm-header-4 {
-  --h4-color: rgb(var(--ctp-h4, var(--ctp-accent)));
+  --h4-color: rgb(var(--efs-h4, var(--efs-accent)));
   line-height: var(--h4-line-height);
 }
 
@@ -1854,7 +1854,7 @@ h5,
 .markdown-rendered h5,
 .HyperMD-header-5,
 .HyperMD-list-line .cm-header-5 {
-  --h5-color: rgb(var(--ctp-h5, var(--ctp-accent)));
+  --h5-color: rgb(var(--efs-h5, var(--efs-accent)));
   line-height: var(--line-height-normal);
 }
 
@@ -1862,7 +1862,7 @@ h6,
 .markdown-rendered h6,
 .HyperMD-header-6,
 .HyperMD-list-line .cm-header-6 {
-  --h6-color: rgb(var(--ctp-h6, var(--ctp-accent)));
+  --h6-color: rgb(var(--efs-h6, var(--efs-accent)));
   line-height: var(--line-height-normal);
 }
 
@@ -1879,7 +1879,7 @@ h6,
 .markdown-rendered mark,
 .cm-s-obsidian span.cm-formatting-highlight,
 .cm-s-obsidian span.cm-highlight {
-  background-color: rgb(var(--ctp-rosewater));
+  background-color: rgb(var(--efs-rosewater));
   color: var(--text-on-accent);
 }
 .markdown-rendered mark.cm-em,
@@ -1888,7 +1888,7 @@ h6,
 .cm-s-obsidian span.cm-formatting-highlight em,
 .cm-s-obsidian span.cm-highlight.cm-em,
 .cm-s-obsidian span.cm-highlight em {
-  background-image: linear-gradient(rgb(var(--ctp-green), 40%), rgb(var(--ctp-green), 60%), rgb(var(--ctp-green), 60%));
+  background-image: linear-gradient(rgb(var(--efs-green), 40%), rgb(var(--efs-green), 60%), rgb(var(--efs-green), 60%));
   color: var(--text-on-accent);
   text-align: left;
 }
@@ -1898,7 +1898,7 @@ h6,
 .cm-s-obsidian span.cm-formatting-highlight strong,
 .cm-s-obsidian span.cm-highlight.cm-strong,
 .cm-s-obsidian span.cm-highlight strong {
-  background-image: linear-gradient(rgb(var(--ctp-sapphire), 40%), rgb(var(--ctp-sapphire), 60%), rgb(var(--ctp-sapphire), 40%));
+  background-image: linear-gradient(rgb(var(--efs-sapphire), 40%), rgb(var(--efs-sapphire), 60%), rgb(var(--efs-sapphire), 40%));
   color: var(--text-on-accent);
 }
 .markdown-rendered mark.cm-strikethrough,
@@ -1907,25 +1907,25 @@ h6,
 .cm-s-obsidian span.cm-formatting-highlight del,
 .cm-s-obsidian span.cm-highlight.cm-strikethrough,
 .cm-s-obsidian span.cm-highlight del {
-  background-image: linear-gradient(rgb(var(--ctp-red), 40%), rgb(var(--ctp-red), 60%), rgb(var(--ctp-red), 40%));
+  background-image: linear-gradient(rgb(var(--efs-red), 40%), rgb(var(--efs-red), 60%), rgb(var(--efs-red), 40%));
   color: var(--text-on-accent);
 }
 
 .cm-s-obsidian span.cm-error {
-  color: rgb(var(--ctp-red));
+  color: rgb(var(--efs-red));
 }
 
 .tooltip {
-  border: 1px solid rgb(var(--ctp-rosewater), 60%);
+  border: 1px solid rgb(var(--efs-rosewater), 60%);
   background-color: var(--background-secondary);
-  box-shadow: 0 0 4px rgb(var(--ctp-mantle));
-  color: rgb(var(--ctp-rosewater), 80%);
+  box-shadow: 0 0 4px rgb(var(--efs-mantle));
+  color: rgb(var(--efs-rosewater), 80%);
 }
 
 .drag-ghost {
   --drag-ghost-background: var(--background-secondary);
-  --drag-ghost-text-color: rgb(var(--ctp-rosewater), 80%);
-  border: 1px solid rgb(var(--ctp-rosewater), 60%);
+  --drag-ghost-text-color: rgb(var(--efs-rosewater), 80%);
+  border: 1px solid rgb(var(--efs-rosewater), 60%);
 }
 
 /**
@@ -1951,7 +1951,7 @@ should have. Hopefully it doesn't break anything!
   left: 50%;
   width: 0;
   border-right: 5px solid transparent;
-  border-bottom: 5px solid rgb(var(--ctp-rosewater), 60%);
+  border-bottom: 5px solid rgb(var(--efs-rosewater), 60%);
   border-left: 5px solid transparent;
   margin-left: -5px;
   content: " ";
@@ -1963,7 +1963,7 @@ should have. Hopefully it doesn't break anything!
   top: calc(50% - 5px);
   left: -5px;
   border-top: 5px solid transparent;
-  border-right: 5px solid rgb(var(--ctp-rosewater), 60%);
+  border-right: 5px solid rgb(var(--efs-rosewater), 60%);
   border-bottom: 5px solid transparent;
 }
 
@@ -1972,27 +1972,27 @@ should have. Hopefully it doesn't break anything!
   left: calc(100% + 5px);
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 5px solid rgb(var(--ctp-rosewater), 60%);
+  border-left: 5px solid rgb(var(--efs-rosewater), 60%);
 }
 
 .tooltip.mod-top .tooltip-arrow {
   top: 100%;
-  border-top: 5px solid rgb(var(--ctp-rosewater), 60%);
+  border-top: 5px solid rgb(var(--efs-rosewater), 60%);
   border-bottom: 5px solid transparent;
 }
 
 .tooltip.mod-error .tooltip-arrow {
-  border-bottom-color: rgb(var(--ctp-red), 60%);
+  border-bottom-color: rgb(var(--efs-red), 60%);
 }
 
 .tooltip.mod-error.mod-right .tooltip-arrow {
-  border-right-color: rgb(var(--ctp-red), 60%);
+  border-right-color: rgb(var(--efs-red), 60%);
   border-bottom: 5px solid transparent;
 }
 
 .tooltip.mod-error.mod-left .tooltip-arrow {
   border-bottom: 5px solid transparent;
-  border-left-color: rgb(var(--ctp-red), 60%);
+  border-left-color: rgb(var(--efs-red), 60%);
 }
 
 /* bezier from Josh Comeau's blog */
@@ -2011,7 +2011,7 @@ body {
 }
 
 .cm-s-obsidian span.cm-formatting-quote {
-  color: rgb(var(--ctp-accent));
+  color: rgb(var(--efs-accent));
 }
 
 .callout[data-callout=abstract],
@@ -2077,21 +2077,21 @@ body {
 }
 
 .prompt {
-  --prompt-border-color: rgb(var(--ctp-surface1));
+  --prompt-border-color: rgb(var(--efs-surface1));
 }
 .prompt .prompt-input[type=text] {
   border: 0;
 }
 .prompt .prompt-results {
   background-color: var(--background-secondary);
-  box-shadow: inset 0 0 10px rgb(var(--ctp-crust)), inset 0 0 12px rgb(var(--ctp-base));
+  box-shadow: inset 0 0 10px rgb(var(--efs-crust)), inset 0 0 12px rgb(var(--efs-base));
 }
 .prompt:hover .suggestion-hotkey {
-  box-shadow: inset 0 0 2px rgb(var(--ctp-crust)), inset 0 0 4px rgb(var(--ctp-base));
+  box-shadow: inset 0 0 2px rgb(var(--efs-crust)), inset 0 0 4px rgb(var(--efs-base));
 }
 
 .suggestion-item.is-selected {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 .suggestion-item.is-selected .suggestion-flair {
@@ -2099,7 +2099,7 @@ body {
 }
 
 .suggestion-item.mod-complex .suggestion-hotkey {
-  background-color: rgb(var(--ctp-surface0));
+  background-color: rgb(var(--efs-surface0));
   color: var(--text-normal);
 }
 
@@ -2115,7 +2115,7 @@ body {
 .clickable-icon:hover,
 .mod-left-split .workspace-tab-header:hover,
 .mod-right-split .workspace-tab-header:hover {
-  --background-modifier-hover: rgb(var(--ctp-accent));
+  --background-modifier-hover: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 .clickable-icon:hover svg,
@@ -2125,7 +2125,7 @@ body {
 }
 
 .clickable-icon[aria-disabled=true]:hover {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
 }
 
 .clickable-icon.is-active,
@@ -2133,15 +2133,15 @@ body {
 .mod-right-split .workspace-tab-header.has-active-menu,
 .mod-left-split .workspace-tab-header.is-active,
 .mod-right-split .workspace-tab-header.is-active {
-  box-shadow: inset 0 0 4px rgb(var(--ctp-crust)), inset 0 0 6px rgb(var(--ctp-base));
-  outline: 1px solid rgb(var(--ctp-surface1));
+  box-shadow: inset 0 0 4px rgb(var(--efs-crust)), inset 0 0 6px rgb(var(--efs-base));
+  outline: 1px solid rgb(var(--efs-surface1));
 }
 .clickable-icon.is-active svg,
 .mod-left-split .workspace-tab-header.has-active-menu svg,
 .mod-right-split .workspace-tab-header.has-active-menu svg,
 .mod-left-split .workspace-tab-header.is-active svg,
 .mod-right-split .workspace-tab-header.is-active svg {
-  color: rgb(var(--ctp-accent));
+  color: rgb(var(--efs-accent));
 }
 .clickable-icon.is-active:hover, .clickable-icon.is-active:hover svg,
 .mod-left-split .workspace-tab-header.has-active-menu:hover,
@@ -2152,7 +2152,7 @@ body {
 .mod-left-split .workspace-tab-header.is-active:hover svg,
 .mod-right-split .workspace-tab-header.is-active:hover,
 .mod-right-split .workspace-tab-header.is-active:hover svg {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
   box-shadow: none;
   color: var(--text-on-accent);
 }
@@ -2161,13 +2161,13 @@ body {
 .workspace-tab-header.is-active .workspace-tab-header-inner-close-button:hover,
 .suggestion :hover.list-item-part.clickable-icon[aria-label="Clear search history"],
 .modal-close-button:hover {
-  background-color: rgb(var(--ctp-red));
-  box-shadow: 0 0 2px 1px rgb(var(--ctp-surface1));
-  color: rgb(var(--ctp-base));
+  background-color: rgb(var(--efs-red));
+  box-shadow: 0 0 2px 1px rgb(var(--efs-surface1));
+  color: rgb(var(--efs-base));
 }
 
 .workspace-tab-header-inner-close-button:hover {
-  background-color: rgb(var(--ctp-red), 50%);
+  background-color: rgb(var(--efs-red), 50%);
 }
 
 .workspace-tab-header-inner:hover .workspace-tab-header-inner-icon {
@@ -2177,7 +2177,7 @@ body {
 
 .search-input-clear-button:hover,
 .search-input-clear-button:active {
-  color: rgb(var(--ctp-red));
+  color: rgb(var(--efs-red));
 }
 
 /*
@@ -2185,13 +2185,13 @@ body {
 */
 .mod-linux .titlebar-button:hover,
 .mod-windows .titlebar-button:hover {
-  background-color: rgb(var(--ctp-pink));
+  background-color: rgb(var(--efs-pink));
   color: var(--text-on-accent);
 }
 
 .mod-linux .titlebar-button.mod-close:hover,
 .mod-windows .titlebar-button.mod-close:hover {
-  background-color: rgb(var(--ctp-red));
+  background-color: rgb(var(--efs-red));
   color: var(--text-on-accent);
 }
 
@@ -2243,10 +2243,10 @@ body {
 /*
 * Hide icons with Style Settings
 */
-.ctp-icon-hide .nav-folder .nav-folder-title .nav-folder-title-content::before,
-.ctp-icon-hide .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before,
-.ctp-icon-hide .nav-folder .nav-folder-title .nav-folder-title-content::before,
-.ctp-icon-hide .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {
+.efs-icon-hide .nav-folder .nav-folder-title .nav-folder-title-content::before,
+.efs-icon-hide .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before,
+.efs-icon-hide .nav-folder .nav-folder-title .nav-folder-title-content::before,
+.efs-icon-hide .nav-folder.is-collapsed .nav-folder-title .nav-folder-title-content::before {
   display: none;
 }
 
@@ -2254,7 +2254,7 @@ body {
 * Bring block edit button in line with rest of button hovers
 */
 .markdown-source-view.mod-cm6 .pdf-embed .edit-block-button:hover {
-  background-color: rgb(var(--ctp-pink));
+  background-color: rgb(var(--efs-pink));
   color: var(--text-on-accent);
 }
 
@@ -2266,7 +2266,7 @@ body {
 
 select:focus,
 .dropdown:focus {
-  box-shadow: 0 0 0 2px rgb(var(--ctp-accent), 70%);
+  box-shadow: 0 0 0 2px rgb(var(--efs-accent), 70%);
 }
 
 textarea:active,
@@ -2287,23 +2287,23 @@ input[type=search]:focus-visible,
 input[type=email]:focus-visible,
 input[type=password]:focus-visible,
 input[type=number]:focus-visible {
-  box-shadow: 0 0 0 2px rgb(var(--ctp-accent), 70%);
+  box-shadow: 0 0 0 2px rgb(var(--efs-accent), 70%);
 }
 
 .checkbox-container {
-  --background-modifier-border-hover: rgb(var(--ctp-red));
-  box-shadow: 0 0 2px inset rgb(var(--ctp-base));
+  --background-modifier-border-hover: rgb(var(--efs-red));
+  box-shadow: 0 0 2px inset rgb(var(--efs-base));
 }
 .checkbox-container::after {
   --toggle-thumb-color: var(--text-on-accent);
-  box-shadow: 0 0 4px rgb(var(--ctp-base));
+  box-shadow: 0 0 4px rgb(var(--efs-base));
 }
 .checkbox-container:hover {
   box-shadow: none;
 }
 
 .markdown-rendered button.copy-code-button {
-  background-color: rgb(var(--ctp-crust));
+  background-color: rgb(var(--efs-crust));
 }
 
 input[type=date]::-webkit-datetime-edit-month-field:active,
@@ -2358,23 +2358,23 @@ input[type=datetime-local]::-webkit-datetime-edit-second-field:focus {
   color: var(--link-color);
 }
 
-body:not(.ctp-tag-pill) .cm-hashtag.cm-hashtag-end {
+body:not(.efs-tag-pill) .cm-hashtag.cm-hashtag-end {
   text-decoration-color: transparent;
   text-decoration-line: underline;
   text-decoration-style: solid;
 }
-body:not(.ctp-tag-pill) .cm-hashtag.cm-hashtag-end:hover {
-  text-decoration: underline 1px rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
+body:not(.efs-tag-pill) .cm-hashtag.cm-hashtag-end:hover {
+  text-decoration: underline 1px rgb(var(--efs-tag-pill-color, var(--efs-accent)));
   text-underline-offset: 1px;
 }
-body:not(.ctp-tag-pill) .cm-hashtag::selection {
-  text-shadow: 0.4px 0 0 rgb(var(--ctp-tag-pill-color, var(--ctp-accent)));
+body:not(.efs-tag-pill) .cm-hashtag::selection {
+  text-shadow: 0.4px 0 0 rgb(var(--efs-tag-pill-color, var(--efs-accent)));
 }
 
 /**
 * 1. Restores default Obsidian settings to tags. See: #56
 */
-.ctp-tag-pill {
+.efs-tag-pill {
   --tag-size: var(--font-smaller);
   --tag-decoration: none;
   --tag-decoration-hover: none;
@@ -2396,7 +2396,7 @@ body:not(.ctp-tag-pill) .cm-hashtag::selection {
   text-decoration-line: none;
 }
 .markdown-source-view.mod-cm6 .is-unresolved:hover {
-  color: rgb(var(--ctp-red));
+  color: rgb(var(--efs-red));
   text-decoration-line: none;
 }
 
@@ -2405,7 +2405,7 @@ body:not(.ctp-tag-pill) .cm-hashtag::selection {
 .cm-s-obsidian .cm-formatting-link.cm-hmd-barelink,
 .cm-s-obsidian .cm-formatting-link.cm-formatting-link-start,
 .cm-s-obsidian .cm-formatting-link.cm-formatting-link-end {
-  color: rgb(var(--ctp-accent));
+  color: rgb(var(--efs-accent));
 }
 
 .empty-state-action {
@@ -2414,7 +2414,7 @@ body:not(.ctp-tag-pill) .cm-hashtag::selection {
 
 @media (hover: hover) {
   .empty-state-action:hover {
-    background-color: rgb(var(--ctp-accent));
+    background-color: rgb(var(--efs-accent));
     color: var(--text-on-accent);
   }
 }
@@ -2511,30 +2511,30 @@ body:not(.ctp-tag-pill) .cm-hashtag::selection {
 * and its treatment of PDFs. Credit/source of modified scss:
 * https://github.com/kepano/obsidian-minimal/blob/0b98cc8ec4576e148057ce6c0ff751ab4df1ece4/src/scss/content/pdf.scss
 */
-.theme-light.ctp-seamless-pdf,
-.theme-dark.ctp-seamless-pdf {
+.theme-light.efs-seamless-pdf,
+.theme-dark.efs-seamless-pdf {
   --pdf-shadow: none;
 }
-.theme-light.ctp-seamless-pdf .pdfViewer .page,
-.theme-dark.ctp-seamless-pdf .pdfViewer .page {
+.theme-light.efs-seamless-pdf .pdfViewer .page,
+.theme-dark.efs-seamless-pdf .pdfViewer .page {
   border: 0;
 }
 
-.theme-dark.ctp-pdf-darken .pdfViewer .canvasWrapper,
-.theme-dark.ctp-pdf-darken .pdf-thumbnail-view .thumbnailImage {
+.theme-dark.efs-pdf-darken .pdfViewer .canvasWrapper,
+.theme-dark.efs-pdf-darken .pdf-thumbnail-view .thumbnailImage {
   filter: invert(1) hue-rotate(180deg);
   mix-blend-mode: screen;
 }
 
-.theme-light.ctp-pdf-blend .pdfViewer .canvasWrapper,
-.theme-light.ctp-pdf-blend .pdf-thumbnail-view .thumbnailImage {
+.theme-light.efs-pdf-blend .pdfViewer .canvasWrapper,
+.theme-light.efs-pdf-blend .pdf-thumbnail-view .thumbnailImage {
   mix-blend-mode: multiply;
 }
 
 /* TODO Add to Style Settings instead */
 .cm-s-obsidian span.obsidian-search-match-highlight {
-  background-color: rgb(var(--ctp-rosewater));
-  box-shadow: 0 0 0 3px rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-rosewater));
+  box-shadow: 0 0 0 3px rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 
@@ -2548,7 +2548,7 @@ body:not(.ctp-tag-pill) .cm-hashtag::selection {
 */
 .workspace-leaf.mod-active .search-result.has-focus .tree-item-self,
 .workspace-leaf.mod-active .search-result-file-match.has-focus {
-  box-shadow: inset 0 0 0 1px rgb(var(--ctp-accent));
+  box-shadow: inset 0 0 0 1px rgb(var(--efs-accent));
 }
 
 @media (hover: hover) {
@@ -2556,7 +2556,7 @@ body:not(.ctp-tag-pill) .cm-hashtag::selection {
     background-color: var(--background-secondary);
   }
   .search-result-file-match:hover {
-    background-color: rgb(var(--ctp-accent), 80%);
+    background-color: rgb(var(--efs-accent), 80%);
     color: var(--text-on-accent);
   }
   .search-result-file-match:hover .search-result-file-match-destination-file:hover {
@@ -2566,7 +2566,7 @@ body:not(.ctp-tag-pill) .cm-hashtag::selection {
   }
 }
 .search-suggest-item.is-selected {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 .search-suggest-item.is-selected .search-suggest-info-text {
@@ -2581,7 +2581,7 @@ body:not(.ctp-tag-pill) .cm-hashtag::selection {
 }
 
 .search-suggest-item.is-selected {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 .search-suggest-item.is-selected .list-item-part.clickable-icon {
@@ -2593,23 +2593,23 @@ body:not(.ctp-tag-pill) .cm-hashtag::selection {
 
 .list-item-part.clickable-icon:hover,
 .list-item-part.clickable-icon:active {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
 }
 
 .search-result-file-match:hover .search-result-file-matched-text {
-  background-color: rgb(var(--ctp-rosewater), 60%);
+  background-color: rgb(var(--efs-rosewater), 60%);
   color: var(--text-on-accent);
 }
 
 .search-result-file-matched-text {
-  background-color: rgb(var(--ctp-rosewater));
+  background-color: rgb(var(--efs-rosewater));
   color: var(--text-on-accent);
 }
 
 .is-flashing,
 .cm-s-obsidian .is-flashing .cm-url {
   --tag-color: var(--text-on-accent);
-  background-color: rgb(var(--ctp-rosewater));
+  background-color: rgb(var(--efs-rosewater));
   color: var(--text-on-accent);
 }
 
@@ -2627,37 +2627,37 @@ body:not(.ctp-tag-pill) .cm-hashtag::selection {
 }
 
 .community-item:hover {
-  --background-modifier-border-hover: rgb(var(--ctp-accent));
+  --background-modifier-border-hover: rgb(var(--efs-accent));
 }
 
 .community-item.is-selected,
 .community-item.is-selected:hover {
-  --interactive-accent: rgb(var(--ctp-mauve));
+  --interactive-accent: rgb(var(--efs-mauve));
 }
 
 .status-bar-item.mod-clickable:hover {
-  --background-modifier-hover: rgb(var(--ctp-accent));
+  --background-modifier-hover: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 
 .view-header-title-parent .view-header-breadcrumb:hover {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 
 .horizontal-tab-nav-item:hover,
 .vertical-tab-nav-item:hover {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 
 .horizontal-tab-nav-item.is-active,
 .vertical-tab-nav-item.is-active {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
 }
 .horizontal-tab-nav-item.is-active:hover,
 .vertical-tab-nav-item.is-active:hover {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
 }
 
 .search-result:not(.is-collapsed) .search-result-file-title {
@@ -2669,8 +2669,8 @@ body:not(.ctp-tag-pill) .cm-hashtag::selection {
 .nav-file-title.is-active,
 .nav-folder-title.is-active,
 .tree-item-self.is-clickable:hover {
-  --nav-item-background-active: rgb(var(--ctp-accent));
-  --nav-item-background-hover: rgb(var(--ctp-accent));
+  --nav-item-background-active: rgb(var(--efs-accent));
+  --nav-item-background-hover: rgb(var(--efs-accent));
   --nav-item-color-hover: var(--text-on-accent);
   --nav-item-color-active: var(--text-on-accent);
 }
@@ -2694,13 +2694,13 @@ body:not(.ctp-tag-pill) .cm-hashtag::selection {
   }
 }
 .nav-file-tag {
-  background-color: rgb(var(--ctp-surface0));
+  background-color: rgb(var(--efs-surface0));
   color: var(--text-normal);
-  outline: 1px solid rgb(var(--ctp-surface1));
+  outline: 1px solid rgb(var(--efs-surface1));
 }
 
 .is-active .nav-file-tag {
-  box-shadow: inset 0 0 2px rgb(var(--ctp-crust)), inset 0 0 4px rgb(var(--ctp-mantle));
+  box-shadow: inset 0 0 2px rgb(var(--efs-crust)), inset 0 0 4px rgb(var(--efs-mantle));
 }
 
 /*
@@ -2718,7 +2718,7 @@ body:not(.ctp-tag-pill) .cm-hashtag::selection {
 * Bookmarks
 */
 .tree-item-self.is-selected {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 .tree-item-self.is-selected .tree-item-icon {
@@ -2728,7 +2728,7 @@ body:not(.ctp-tag-pill) .cm-hashtag::selection {
 body:not(.is-grabbing) .tree-item-self.is-active:hover,
 .tree-item-self.is-active {
   --nav-item-color-active: var(--text-on-accent);
-  --nav-item-background-active: rgb(var(--ctp-accent));
+  --nav-item-background-active: rgb(var(--efs-accent));
 }
 body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
 .tree-item-self.is-active .tree-item-icon {
@@ -2741,8 +2741,8 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
   }
 }
 .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
-  --background-modifier-hover: rgb(var(--ctp-accent));
-  --background-modifier-active-hover: rgb(var(--ctp-accent));
+  --background-modifier-hover: rgb(var(--efs-accent));
+  --background-modifier-active-hover: rgb(var(--efs-accent));
 }
 .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner .workspace-tab-header-inner-title {
   color: var(--text-on-accent);
@@ -2758,7 +2758,7 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
   --background-modifier-active-hover: transparent;
 }
 .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner .workspace-tab-header-inner-title {
-  color: rgb(var(--ctp-accent));
+  color: rgb(var(--efs-accent));
 }
 
 .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button:hover svg {
@@ -2770,7 +2770,7 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
 }
 
 .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-header-inner:hover .workspace-tab-header-inner-title {
-  color: rgb(var(--ctp-accent));
+  color: rgb(var(--efs-accent));
 }
 
 .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-icon:hover {
@@ -2788,7 +2788,7 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
 }
 
 .canvas-controls button:hover {
-  --interactive-hover: rgb(var(--ctp-accent));
+  --interactive-hover: rgb(var(--efs-accent));
   --text-normal: var(--text-on-accent);
 }
 
@@ -2798,7 +2798,7 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
 
 @media (hover: hover) {
   .canvas-control-item:hover {
-    background-color: rgb(var(--ctp-pink));
+    background-color: rgb(var(--efs-pink));
     color: var(--text-on-accent);
   }
 }
@@ -2824,18 +2824,18 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
 }
 
 .mod-settings input.slider {
-  --slider-track-background: rgb(var(--ctp-accent));
+  --slider-track-background: rgb(var(--efs-accent));
 }
 .mod-settings input[type=color]::-webkit-color-swatch:hover {
-  box-shadow: inset 0 0 0 1px rgb(var(--mono-rgb-100), 25%), 0 0 0 2px rgb(var(--ctp-surface1));
+  box-shadow: inset 0 0 0 1px rgb(var(--mono-rgb-100), 25%), 0 0 0 2px rgb(var(--efs-surface1));
 }
 .mod-settings .checkbox-container {
-  --background-modifier-border-hover: rgb(var(--ctp-red));
-  box-shadow: 0 0 2px inset rgb(var(--ctp-base));
+  --background-modifier-border-hover: rgb(var(--efs-red));
+  box-shadow: 0 0 2px inset rgb(var(--efs-base));
 }
 .mod-settings .checkbox-container::after {
   --toggle-thumb-color: var(--text-on-accent);
-  box-shadow: 0 0 4px rgb(var(--ctp-base));
+  box-shadow: 0 0 4px rgb(var(--efs-base));
 }
 .mod-settings .checkbox-container:hover {
   box-shadow: none;
@@ -2847,7 +2847,7 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
 }
 
 .checkbox-container.is-enabled {
-  background-color: rgb(var(--ctp-green));
+  background-color: rgb(var(--efs-green));
 }
 
 button.mod-cta {
@@ -2871,27 +2871,27 @@ button.mod-cta:hover {
 }
 
 .modal {
-  border-color: rgb(var(--ctp-surface1));
+  border-color: rgb(var(--efs-surface1));
 }
 
-.style-settings-heading[data-id=catppuccin-theme-credits-link] + .style-settings-container,
-.style-settings-heading[data-id=catppuccin-theme-credits-link] .style-settings-collapse-indicator {
+.style-settings-heading[data-id=everforest-theme-credits-link] + .style-settings-container,
+.style-settings-heading[data-id=everforest-theme-credits-link] .style-settings-collapse-indicator {
   display: none;
 }
-.style-settings-heading[data-id=catppuccin-theme-credits-link]:not(.is-collapsed) {
+.style-settings-heading[data-id=everforest-theme-credits-link]:not(.is-collapsed) {
   margin-bottom: 0;
 }
 
 .community-item .flair:not(.mod-pop) {
-  --tag-background: rgb(var(--ctp-accent));
+  --tag-background: rgb(var(--efs-accent));
   --tag-color: var(--text-on-accent);
   text-transform: lowercase;
 }
 
 body:not(.is-phone) .horizontal-tab-nav-item.is-active,
 body:not(.is-phone) .vertical-tab-nav-item.is-active {
-  --ctp-accent: var(--ctp-mauve);
-  background-color: rgb(var(--ctp-accent));
+  --efs-accent: var(--efs-mauve);
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 
@@ -2903,40 +2903,66 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 }
 
 /**
-* Some tweaks for the light/Catppuccin Latte theme.
+* Some tweaks for the light theme.
 */
 .theme-dark:not(.css-settings-manager),
 .theme-light:not(.css-settings-manager),
-.ctp-full-palette {
-  --blockquote-border-color: rgb(var(--ctp-lavender));
-  --ctp-accent: var(--ctp-lavender);
-  --divider-color-hover: rgb(var(--ctp-blue));
-  --hr-color: rgb(var(--ctp-blue));
-  --indentation-guide-color: rgb(var(--ctp-surface1));
-  --indentation-guide-color-active: rgb(var(--ctp-sapphire), 70%);
+.efs-full-palette {
+  --blockquote-border-color: rgb(var(--efs-lavender));
+  --efs-accent: var(--efs-lavender);
+  --divider-color-hover: rgb(var(--efs-blue));
+  --hr-color: rgb(var(--efs-blue));
+  --indentation-guide-color: rgb(var(--efs-surface1));
+  --indentation-guide-color-active: rgb(var(--efs-sapphire), 70%);
   --indentation-guide-width: 2px;
-  --list-marker-color: rgb(var(--ctp-sapphire));
-  --checklist-done-color: rgb(var(--ctp-green));
-}
-.theme-dark:not(.css-settings-manager) .workspace-tab-header-inner-close-button:hover,
-.theme-light:not(.css-settings-manager) .workspace-tab-header-inner-close-button:hover,
-.ctp-full-palette .workspace-tab-header-inner-close-button:hover {
-  box-shadow: none;
-}
-.theme-dark:not(.css-settings-manager),
-.theme-light:not(.css-settings-manager),
-.ctp-full-palette {
+  --list-marker-color: rgb(var(--efs-sapphire));
+  --checklist-done-color: rgb(var(--efs-green));
   /*
   * Nav bar
   */
+  /*
+  * Icons
+  */
+  /*
+  * Tabs
+  */
+  /*
+  * Prompts
+  */
+  /*
+  * Search
+  */
+  /*
+  * Dropdowns
+  */
+  /*
+  * Checkboxes
+  */
+  /*
+  ? I think !important is necessary to overwrite app.css
+  */
+  /*
+  *  settings slider
+  */
+  /*
+  * Canvas
+  */
+  /*
+  * Bookmarks
+  */
+}
+.theme-dark:not(.css-settings-manager) .workspace-tab-header-inner-close-button:hover,
+.theme-light:not(.css-settings-manager) .workspace-tab-header-inner-close-button:hover,
+.efs-full-palette .workspace-tab-header-inner-close-button:hover {
+  box-shadow: none;
 }
 .theme-dark:not(.css-settings-manager) .nav-file-title.is-active,
 .theme-dark:not(.css-settings-manager) .nav-folder-title.is-active,
 .theme-light:not(.css-settings-manager) .nav-file-title.is-active,
 .theme-light:not(.css-settings-manager) .nav-folder-title.is-active,
-.ctp-full-palette .nav-file-title.is-active,
-.ctp-full-palette .nav-folder-title.is-active {
-  --nav-item-background-active: rgb(var(--ctp-mauve));
+.efs-full-palette .nav-file-title.is-active,
+.efs-full-palette .nav-folder-title.is-active {
+  --nav-item-background-active: rgb(var(--efs-mauve));
 }
 .theme-dark:not(.css-settings-manager) :not(.is-grabbing) .nav-file-title:hover,
 .theme-dark:not(.css-settings-manager) :not(.is-grabbing) .nav-folder-title:hover,
@@ -2944,24 +2970,17 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 .theme-light:not(.css-settings-manager) :not(.is-grabbing) .nav-file-title:hover,
 .theme-light:not(.css-settings-manager) :not(.is-grabbing) .nav-folder-title:hover,
 .theme-light:not(.css-settings-manager) .tree-item-self.is-clickable:hover,
-.ctp-full-palette :not(.is-grabbing) .nav-file-title:hover,
-.ctp-full-palette :not(.is-grabbing) .nav-folder-title:hover,
-.ctp-full-palette .tree-item-self.is-clickable:hover {
-  background-color: rgb(var(--ctp-accent));
+.efs-full-palette :not(.is-grabbing) .nav-file-title:hover,
+.efs-full-palette :not(.is-grabbing) .nav-folder-title:hover,
+.efs-full-palette .tree-item-self.is-clickable:hover {
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 .theme-dark:not(.css-settings-manager) .nav-folder.mod-root > .nav-folder-title:hover,
 .theme-light:not(.css-settings-manager) .nav-folder.mod-root > .nav-folder-title:hover,
-.ctp-full-palette .nav-folder.mod-root > .nav-folder-title:hover {
+.efs-full-palette .nav-folder.mod-root > .nav-folder-title:hover {
   background-color: transparent;
   color: rgb(var(--text-normal));
-}
-.theme-dark:not(.css-settings-manager),
-.theme-light:not(.css-settings-manager),
-.ctp-full-palette {
-  /*
-  * Icons
-  */
 }
 .theme-dark:not(.css-settings-manager) .clickable-icon.is-active,
 .theme-dark:not(.css-settings-manager) .mod-left-split .workspace-tab-header.has-active-menu,
@@ -2973,13 +2992,13 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 .theme-light:not(.css-settings-manager) .mod-right-split .workspace-tab-header.has-active-menu,
 .theme-light:not(.css-settings-manager) .mod-left-split .workspace-tab-header.is-active,
 .theme-light:not(.css-settings-manager) .mod-right-split .workspace-tab-header.is-active,
-.ctp-full-palette .clickable-icon.is-active,
-.ctp-full-palette .mod-left-split .workspace-tab-header.has-active-menu,
-.ctp-full-palette .mod-right-split .workspace-tab-header.has-active-menu,
-.ctp-full-palette .mod-left-split .workspace-tab-header.is-active,
-.ctp-full-palette .mod-right-split .workspace-tab-header.is-active {
-  box-shadow: inset 0 0 4px rgb(var(--ctp-crust)), inset 0 0 6px rgb(var(--ctp-base));
-  outline: 1px solid rgb(var(--ctp-surface1));
+.efs-full-palette .clickable-icon.is-active,
+.efs-full-palette .mod-left-split .workspace-tab-header.has-active-menu,
+.efs-full-palette .mod-right-split .workspace-tab-header.has-active-menu,
+.efs-full-palette .mod-left-split .workspace-tab-header.is-active,
+.efs-full-palette .mod-right-split .workspace-tab-header.is-active {
+  box-shadow: inset 0 0 4px rgb(var(--efs-crust)), inset 0 0 6px rgb(var(--efs-base));
+  outline: 1px solid rgb(var(--efs-surface1));
 }
 .theme-dark:not(.css-settings-manager) .clickable-icon.is-active svg,
 .theme-dark:not(.css-settings-manager) .mod-left-split .workspace-tab-header.has-active-menu svg,
@@ -2991,12 +3010,12 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 .theme-light:not(.css-settings-manager) .mod-right-split .workspace-tab-header.has-active-menu svg,
 .theme-light:not(.css-settings-manager) .mod-left-split .workspace-tab-header.is-active svg,
 .theme-light:not(.css-settings-manager) .mod-right-split .workspace-tab-header.is-active svg,
-.ctp-full-palette .clickable-icon.is-active svg,
-.ctp-full-palette .mod-left-split .workspace-tab-header.has-active-menu svg,
-.ctp-full-palette .mod-right-split .workspace-tab-header.has-active-menu svg,
-.ctp-full-palette .mod-left-split .workspace-tab-header.is-active svg,
-.ctp-full-palette .mod-right-split .workspace-tab-header.is-active svg {
-  color: rgb(var(--ctp-pink));
+.efs-full-palette .clickable-icon.is-active svg,
+.efs-full-palette .mod-left-split .workspace-tab-header.has-active-menu svg,
+.efs-full-palette .mod-right-split .workspace-tab-header.has-active-menu svg,
+.efs-full-palette .mod-left-split .workspace-tab-header.is-active svg,
+.efs-full-palette .mod-right-split .workspace-tab-header.is-active svg {
+  color: rgb(var(--efs-pink));
 }
 .theme-dark:not(.css-settings-manager) .clickable-icon.is-active:hover, .theme-dark:not(.css-settings-manager) .clickable-icon.is-active:hover svg,
 .theme-dark:not(.css-settings-manager) .mod-left-split .workspace-tab-header.has-active-menu:hover,
@@ -3017,17 +3036,17 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 .theme-light:not(.css-settings-manager) .mod-left-split .workspace-tab-header.is-active:hover svg,
 .theme-light:not(.css-settings-manager) .mod-right-split .workspace-tab-header.is-active:hover,
 .theme-light:not(.css-settings-manager) .mod-right-split .workspace-tab-header.is-active:hover svg,
-.ctp-full-palette .clickable-icon.is-active:hover,
-.ctp-full-palette .clickable-icon.is-active:hover svg,
-.ctp-full-palette .mod-left-split .workspace-tab-header.has-active-menu:hover,
-.ctp-full-palette .mod-left-split .workspace-tab-header.has-active-menu:hover svg,
-.ctp-full-palette .mod-right-split .workspace-tab-header.has-active-menu:hover,
-.ctp-full-palette .mod-right-split .workspace-tab-header.has-active-menu:hover svg,
-.ctp-full-palette .mod-left-split .workspace-tab-header.is-active:hover,
-.ctp-full-palette .mod-left-split .workspace-tab-header.is-active:hover svg,
-.ctp-full-palette .mod-right-split .workspace-tab-header.is-active:hover,
-.ctp-full-palette .mod-right-split .workspace-tab-header.is-active:hover svg {
-  background-color: rgb(var(--ctp-pink));
+.efs-full-palette .clickable-icon.is-active:hover,
+.efs-full-palette .clickable-icon.is-active:hover svg,
+.efs-full-palette .mod-left-split .workspace-tab-header.has-active-menu:hover,
+.efs-full-palette .mod-left-split .workspace-tab-header.has-active-menu:hover svg,
+.efs-full-palette .mod-right-split .workspace-tab-header.has-active-menu:hover,
+.efs-full-palette .mod-right-split .workspace-tab-header.has-active-menu:hover svg,
+.efs-full-palette .mod-left-split .workspace-tab-header.is-active:hover,
+.efs-full-palette .mod-left-split .workspace-tab-header.is-active:hover svg,
+.efs-full-palette .mod-right-split .workspace-tab-header.is-active:hover,
+.efs-full-palette .mod-right-split .workspace-tab-header.is-active:hover svg {
+  background-color: rgb(var(--efs-pink));
   box-shadow: none;
   color: var(--text-on-accent);
 }
@@ -3037,10 +3056,10 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 .theme-light:not(.css-settings-manager) .clickable-icon:hover,
 .theme-light:not(.css-settings-manager) .mod-left-split .workspace-tab-header:hover,
 .theme-light:not(.css-settings-manager) .mod-right-split .workspace-tab-header:hover,
-.ctp-full-palette .clickable-icon:hover,
-.ctp-full-palette .mod-left-split .workspace-tab-header:hover,
-.ctp-full-palette .mod-right-split .workspace-tab-header:hover {
-  background-color: rgb(var(--ctp-pink));
+.efs-full-palette .clickable-icon:hover,
+.efs-full-palette .mod-left-split .workspace-tab-header:hover,
+.efs-full-palette .mod-right-split .workspace-tab-header:hover {
+  background-color: rgb(var(--efs-pink));
   color: var(--text-on-accent);
 }
 .theme-dark:not(.css-settings-manager) .clickable-icon:hover svg,
@@ -3049,76 +3068,55 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 .theme-light:not(.css-settings-manager) .clickable-icon:hover svg,
 .theme-light:not(.css-settings-manager) .mod-left-split .workspace-tab-header:hover svg,
 .theme-light:not(.css-settings-manager) .mod-right-split .workspace-tab-header:hover svg,
-.ctp-full-palette .clickable-icon:hover svg,
-.ctp-full-palette .mod-left-split .workspace-tab-header:hover svg,
-.ctp-full-palette .mod-right-split .workspace-tab-header:hover svg {
+.efs-full-palette .clickable-icon:hover svg,
+.efs-full-palette .mod-left-split .workspace-tab-header:hover svg,
+.efs-full-palette .mod-right-split .workspace-tab-header:hover svg {
   color: var(--text-on-accent);
 }
 .theme-dark:not(.css-settings-manager) .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner,
 .theme-light:not(.css-settings-manager) .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner,
-.ctp-full-palette .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
-  --background-modifier-hover: rgb(var(--ctp-pink));
+.efs-full-palette .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner {
+  --background-modifier-hover: rgb(var(--efs-pink));
 }
 .theme-dark:not(.css-settings-manager) .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-icon:hover,
 .theme-light:not(.css-settings-manager) .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-icon:hover,
-.ctp-full-palette .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-icon:hover {
+.efs-full-palette .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-container .workspace-tab-header-inner-icon:hover {
   background-color: transparent;
 }
 .theme-dark:not(.css-settings-manager) .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner svg,
 .theme-light:not(.css-settings-manager) .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner svg,
-.ctp-full-palette .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner svg {
+.efs-full-palette .mod-vertical .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner svg {
   color: var(--text-on-accent);
 }
 .theme-dark:not(.css-settings-manager) .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button:hover svg,
 .theme-light:not(.css-settings-manager) .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button:hover svg,
-.ctp-full-palette .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button:hover svg {
+.efs-full-palette .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active) .workspace-tab-header-inner-close-button:hover svg {
   color: var(--text-on-accent);
-}
-.theme-dark:not(.css-settings-manager),
-.theme-light:not(.css-settings-manager),
-.ctp-full-palette {
-  /*
-  * Tabs
-  */
 }
 .theme-dark:not(.css-settings-manager) .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-header-inner:hover .workspace-tab-header-inner-title,
 .theme-light:not(.css-settings-manager) .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-header-inner:hover .workspace-tab-header-inner-title,
-.ctp-full-palette .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-header-inner:hover .workspace-tab-header-inner-title {
-  color: rgb(var(--ctp-pink));
+.efs-full-palette .workspace .mod-root .workspace-tabs.mod-stacked .workspace-tab-header-inner:hover .workspace-tab-header-inner-title {
+  color: rgb(var(--efs-pink));
 }
 .theme-dark:not(.css-settings-manager) .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner .workspace-tab-header-inner-title,
 .theme-light:not(.css-settings-manager) .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner .workspace-tab-header-inner-title,
-.ctp-full-palette .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner .workspace-tab-header-inner-title {
-  color: rgb(var(--ctp-pink));
-}
-.theme-dark:not(.css-settings-manager),
-.theme-light:not(.css-settings-manager),
-.ctp-full-palette {
-  /*
-  * Prompts
-  */
+.efs-full-palette .mod-vertical .workspace-tabs.mod-stacked .workspace-tab-header:not(.is-active):hover .workspace-tab-header-inner .workspace-tab-header-inner-title {
+  color: rgb(var(--efs-pink));
 }
 .theme-dark:not(.css-settings-manager) .suggestion-item.is-selected,
 .theme-light:not(.css-settings-manager) .suggestion-item.is-selected,
-.ctp-full-palette .suggestion-item.is-selected {
-  --background-modifier-hover: rgb(var(--ctp-lavender));
+.efs-full-palette .suggestion-item.is-selected {
+  --background-modifier-hover: rgb(var(--efs-lavender));
   color: var(--text-on-accent);
 }
 .theme-dark:not(.css-settings-manager) .suggestion-item.is-selected:hover .suggestion-flair,
 .theme-light:not(.css-settings-manager) .suggestion-item.is-selected:hover .suggestion-flair,
-.ctp-full-palette .suggestion-item.is-selected:hover .suggestion-flair {
+.efs-full-palette .suggestion-item.is-selected:hover .suggestion-flair {
   color: var(--text-on-accent);
-}
-.theme-dark:not(.css-settings-manager),
-.theme-light:not(.css-settings-manager),
-.ctp-full-palette {
-  /*
-  * Search
-  */
 }
 .theme-dark:not(.css-settings-manager) .suggestion .suggestion-item.mod-group,
 .theme-light:not(.css-settings-manager) .suggestion .suggestion-item.mod-group,
-.ctp-full-palette .suggestion .suggestion-item.mod-group {
+.efs-full-palette .suggestion .suggestion-item.mod-group {
   background-color: inherit;
   color: var(--text-muted);
   font-size: var(--font-ui-medium);
@@ -3126,34 +3124,27 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 }
 .theme-dark:not(.css-settings-manager) .search-suggest-item.is-selected,
 .theme-light:not(.css-settings-manager) .search-suggest-item.is-selected,
-.ctp-full-palette .search-suggest-item.is-selected {
-  background-color: rgb(var(--ctp-accent));
+.efs-full-palette .search-suggest-item.is-selected {
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 .theme-dark:not(.css-settings-manager) .search-suggest-item.is-selected .list-item-part.clickable-icon,
 .theme-light:not(.css-settings-manager) .search-suggest-item.is-selected .list-item-part.clickable-icon,
-.ctp-full-palette .search-suggest-item.is-selected .list-item-part.clickable-icon {
+.efs-full-palette .search-suggest-item.is-selected .list-item-part.clickable-icon {
   color: var(--text-muted);
 }
 .theme-dark:not(.css-settings-manager) .search-suggest-item.is-selected .search-suggest-info-text,
 .theme-light:not(.css-settings-manager) .search-suggest-item.is-selected .search-suggest-info-text,
-.ctp-full-palette .search-suggest-item.is-selected .search-suggest-info-text {
+.efs-full-palette .search-suggest-item.is-selected .search-suggest-info-text {
   color: var(--text-on-accent);
-}
-.theme-dark:not(.css-settings-manager),
-.theme-light:not(.css-settings-manager),
-.ctp-full-palette {
-  /*
-  * Dropdowns
-  */
 }
 .theme-dark:not(.css-settings-manager) select:focus,
 .theme-dark:not(.css-settings-manager) .dropdown:focus,
 .theme-light:not(.css-settings-manager) select:focus,
 .theme-light:not(.css-settings-manager) .dropdown:focus,
-.ctp-full-palette select:focus,
-.ctp-full-palette .dropdown:focus {
-  box-shadow: 0 0 0 2px rgb(var(--ctp-blue), 70%);
+.efs-full-palette select:focus,
+.efs-full-palette .dropdown:focus {
+  box-shadow: 0 0 0 2px rgb(var(--efs-blue), 70%);
 }
 .theme-dark:not(.css-settings-manager) textarea:active,
 .theme-dark:not(.css-settings-manager) input[type=text]:active,
@@ -3191,43 +3182,36 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 .theme-light:not(.css-settings-manager) input[type=email]:focus-visible,
 .theme-light:not(.css-settings-manager) input[type=password]:focus-visible,
 .theme-light:not(.css-settings-manager) input[type=number]:focus-visible,
-.ctp-full-palette textarea:active,
-.ctp-full-palette input[type=text]:active,
-.ctp-full-palette input[type=search]:active,
-.ctp-full-palette input[type=email]:active,
-.ctp-full-palette input[type=password]:active,
-.ctp-full-palette input[type=number]:active,
-.ctp-full-palette textarea:focus,
-.ctp-full-palette input[type=text]:focus,
-.ctp-full-palette input[type=search]:focus,
-.ctp-full-palette input[type=email]:focus,
-.ctp-full-palette input[type=password]:focus,
-.ctp-full-palette input[type=number]:focus,
-.ctp-full-palette textarea:focus-visible,
-.ctp-full-palette input[type=text]:focus-visible,
-.ctp-full-palette input[type=search]:focus-visible,
-.ctp-full-palette input[type=email]:focus-visible,
-.ctp-full-palette input[type=password]:focus-visible,
-.ctp-full-palette input[type=number]:focus-visible {
-  box-shadow: 0 0 0 2px rgb(var(--ctp-blue), 70%);
-}
-.theme-dark:not(.css-settings-manager),
-.theme-light:not(.css-settings-manager),
-.ctp-full-palette {
-  /*
-  * Checkboxes
-  */
+.efs-full-palette textarea:active,
+.efs-full-palette input[type=text]:active,
+.efs-full-palette input[type=search]:active,
+.efs-full-palette input[type=email]:active,
+.efs-full-palette input[type=password]:active,
+.efs-full-palette input[type=number]:active,
+.efs-full-palette textarea:focus,
+.efs-full-palette input[type=text]:focus,
+.efs-full-palette input[type=search]:focus,
+.efs-full-palette input[type=email]:focus,
+.efs-full-palette input[type=password]:focus,
+.efs-full-palette input[type=number]:focus,
+.efs-full-palette textarea:focus-visible,
+.efs-full-palette input[type=text]:focus-visible,
+.efs-full-palette input[type=search]:focus-visible,
+.efs-full-palette input[type=email]:focus-visible,
+.efs-full-palette input[type=password]:focus-visible,
+.efs-full-palette input[type=number]:focus-visible {
+  box-shadow: 0 0 0 2px rgb(var(--efs-blue), 70%);
 }
 .theme-dark:not(.css-settings-manager) input[type=checkbox]:not(:checked),
 .theme-light:not(.css-settings-manager) input[type=checkbox]:not(:checked),
-.ctp-full-palette input[type=checkbox]:not(:checked) {
-  border-color: rgb(var(--ctp-maroon));
-  background-color: rgb(var(--ctp-red));
-  box-shadow: inset 2px 2px 24px rgb(var(--ctp-mantle)), inset -2px -2px 24px rgb(var(--ctp-mantle));
+.efs-full-palette input[type=checkbox]:not(:checked) {
+  border-color: rgb(var(--efs-maroon));
+  background-color: rgb(var(--efs-red));
+  box-shadow: inset 2px 2px 24px rgb(var(--efs-mantle)), inset -2px -2px 24px rgb(var(--efs-mantle));
 }
 .theme-dark:not(.css-settings-manager) input[type=checkbox]:not(:checked):hover,
 .theme-light:not(.css-settings-manager) input[type=checkbox]:not(:checked):hover,
-.ctp-full-palette input[type=checkbox]:not(:checked):hover {
+.efs-full-palette input[type=checkbox]:not(:checked):hover {
   border-width: 2px;
 }
 .theme-dark:not(.css-settings-manager) input[type=checkbox]:not([data-task=">"],
@@ -3260,7 +3244,7 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 [data-task=c],
 [data-task=d],
 [data-task=b]):checked,
-.ctp-full-palette input[type=checkbox]:not([data-task=">"],
+.efs-full-palette input[type=checkbox]:not([data-task=">"],
 [data-task="!"],
 [data-task="-"],
 [data-task="<"],
@@ -3276,8 +3260,8 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 [data-task=d],
 [data-task=b]):checked {
   border-color: transparent;
-  background-color: rgb(var(--ctp-green));
-  box-shadow: 0 0 0 1px rgb(var(--ctp-green), 40%);
+  background-color: rgb(var(--efs-green));
+  box-shadow: 0 0 0 1px rgb(var(--efs-green), 40%);
 }
 .theme-dark:not(.css-settings-manager) input[type=checkbox]:not([data-task=">"],
 [data-task="!"],
@@ -3309,7 +3293,7 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 [data-task=c],
 [data-task=d],
 [data-task=b]):checked:hover,
-.ctp-full-palette input[type=checkbox]:not([data-task=">"],
+.efs-full-palette input[type=checkbox]:not([data-task=">"],
 [data-task="!"],
 [data-task="-"],
 [data-task="<"],
@@ -3324,99 +3308,71 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 [data-task=c],
 [data-task=d],
 [data-task=b]):checked:hover {
-  background-color: rgb(var(--ctp-accent));
-  box-shadow: 0 0 0 1px rgb(var(--ctp-accent), 40%);
+  background-color: rgb(var(--efs-accent));
+  box-shadow: 0 0 0 1px rgb(var(--efs-accent), 40%);
 }
 .theme-dark:not(.css-settings-manager) .horizontal-tab-nav-item:hover,
 .theme-dark:not(.css-settings-manager) .vertical-tab-nav-item:hover,
 .theme-light:not(.css-settings-manager) .horizontal-tab-nav-item:hover,
 .theme-light:not(.css-settings-manager) .vertical-tab-nav-item:hover,
-.ctp-full-palette .horizontal-tab-nav-item:hover,
-.ctp-full-palette .vertical-tab-nav-item:hover {
-  background-color: rgb(var(--ctp-accent));
+.efs-full-palette .horizontal-tab-nav-item:hover,
+.efs-full-palette .vertical-tab-nav-item:hover {
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 .theme-dark:not(.css-settings-manager) .horizontal-tab-nav-item.is-active,
 .theme-dark:not(.css-settings-manager) .vertical-tab-nav-item.is-active,
 .theme-light:not(.css-settings-manager) .horizontal-tab-nav-item.is-active,
 .theme-light:not(.css-settings-manager) .vertical-tab-nav-item.is-active,
-.ctp-full-palette .horizontal-tab-nav-item.is-active,
-.ctp-full-palette .vertical-tab-nav-item.is-active {
-  background-color: rgb(var(--ctp-accent));
+.efs-full-palette .horizontal-tab-nav-item.is-active,
+.efs-full-palette .vertical-tab-nav-item.is-active {
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 .theme-dark:not(.css-settings-manager) .horizontal-tab-nav-item.is-active:hover,
 .theme-dark:not(.css-settings-manager) .vertical-tab-nav-item.is-active:hover,
 .theme-light:not(.css-settings-manager) .horizontal-tab-nav-item.is-active:hover,
 .theme-light:not(.css-settings-manager) .vertical-tab-nav-item.is-active:hover,
-.ctp-full-palette .horizontal-tab-nav-item.is-active:hover,
-.ctp-full-palette .vertical-tab-nav-item.is-active:hover {
-  background-color: rgb(var(--ctp-accent));
-}
-.theme-dark:not(.css-settings-manager),
-.theme-light:not(.css-settings-manager),
-.ctp-full-palette {
-  /*
-  ? I think !important is necessary to overwrite app.css
-  */
+.efs-full-palette .horizontal-tab-nav-item.is-active:hover,
+.efs-full-palette .vertical-tab-nav-item.is-active:hover {
+  background-color: rgb(var(--efs-accent));
 }
 .theme-dark:not(.css-settings-manager) .HyperMD-header .cm-formatting-header,
 .theme-light:not(.css-settings-manager) .HyperMD-header .cm-formatting-header,
-.ctp-full-palette .HyperMD-header .cm-formatting-header {
-  color: rgb(var(--ctp-sapphire));
+.efs-full-palette .HyperMD-header .cm-formatting-header {
+  color: rgb(var(--efs-sapphire));
   font-size: 75% !important;
-}
-.theme-dark:not(.css-settings-manager),
-.theme-light:not(.css-settings-manager),
-.ctp-full-palette {
-  /*
-  *  settings slider
-  */
 }
 .theme-dark:not(.css-settings-manager) .mod-settings input.slider,
 .theme-light:not(.css-settings-manager) .mod-settings input.slider,
-.ctp-full-palette .mod-settings input.slider {
-  --slider-track-background: rgb(var(--ctp-green));
+.efs-full-palette .mod-settings input.slider {
+  --slider-track-background: rgb(var(--efs-green));
 }
 .theme-dark:not(.css-settings-manager) .mod-settings input[type=color]::-webkit-color-swatch:hover,
 .theme-light:not(.css-settings-manager) .mod-settings input[type=color]::-webkit-color-swatch:hover,
-.ctp-full-palette .mod-settings input[type=color]::-webkit-color-swatch:hover {
-  box-shadow: inset 0 0 0 1px rgb(var(--mono-rgb-100), 25%), 0 0 0 2px rgb(var(--ctp-surface1));
-}
-.theme-dark:not(.css-settings-manager),
-.theme-light:not(.css-settings-manager),
-.ctp-full-palette {
-  /*
-  * Canvas
-  */
+.efs-full-palette .mod-settings input[type=color]::-webkit-color-swatch:hover {
+  box-shadow: inset 0 0 0 1px rgb(var(--mono-rgb-100), 25%), 0 0 0 2px rgb(var(--efs-surface1));
 }
 .theme-dark:not(.css-settings-manager) .canvas-controls button:hover,
 .theme-light:not(.css-settings-manager) .canvas-controls button:hover,
-.ctp-full-palette .canvas-controls button:hover {
-  background-color: rgb(var(--ctp-pink));
-}
-.theme-dark:not(.css-settings-manager),
-.theme-light:not(.css-settings-manager),
-.ctp-full-palette {
-  /*
-  * Bookmarks
-  */
+.efs-full-palette .canvas-controls button:hover {
+  background-color: rgb(var(--efs-pink));
 }
 .theme-dark:not(.css-settings-manager) body:not(.is-grabbing) .tree-item-self.is-active:hover,
 .theme-dark:not(.css-settings-manager) .tree-item-self.is-active,
 .theme-light:not(.css-settings-manager) body:not(.is-grabbing) .tree-item-self.is-active:hover,
 .theme-light:not(.css-settings-manager) .tree-item-self.is-active,
-.ctp-full-palette body:not(.is-grabbing) .tree-item-self.is-active:hover,
-.ctp-full-palette .tree-item-self.is-active {
+.efs-full-palette body:not(.is-grabbing) .tree-item-self.is-active:hover,
+.efs-full-palette .tree-item-self.is-active {
   --nav-item-color-active: var(--text-on-accent);
-  --nav-item-background-active: rgb(var(--ctp-mauve));
+  --nav-item-background-active: rgb(var(--efs-mauve));
 }
 .theme-dark:not(.css-settings-manager) body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
 .theme-dark:not(.css-settings-manager) .tree-item-self.is-active .tree-item-icon,
 .theme-light:not(.css-settings-manager) body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
 .theme-light:not(.css-settings-manager) .tree-item-self.is-active .tree-item-icon,
-.ctp-full-palette body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
-.ctp-full-palette .tree-item-self.is-active .tree-item-icon {
+.efs-full-palette body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
+.efs-full-palette .tree-item-self.is-active .tree-item-icon {
   --icon-color: var(--text-on-accent);
 }
 
@@ -3432,7 +3388,7 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 .better-command-palette .suggestion-item .suggestion-flair {
   border-radius: var(--radius-s);
   margin-bottom: 1px;
-  background-color: rgb(var(--ctp-surface0));
+  background-color: rgb(var(--efs-surface0));
   color: var(--text-muted);
 }
 
@@ -3459,7 +3415,7 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 
 /* Obsidian Git */
 .git-commit-msg .git-commit-msg-clear-button:hover {
-  --search-clear-button-color: rgb(var(--ctp-red));
+  --search-clear-button-color: rgb(var(--efs-red));
 }
 
 /* Another Quick Switcher */
@@ -3469,12 +3425,12 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 }
 
 .another-quick-switcher__hit_word {
-  background-color: rgb(var(--ctp-rosewater), 60%);
+  background-color: rgb(var(--efs-rosewater), 60%);
   color: var(--text-on-accent);
 }
 
 /*
-* Adds some padding for larger Catppuccin separator
+* Adds some padding for larger Everforest separator
 */
 .another-quick-switcher__status__search-command {
   padding-bottom: 0.5rem;
@@ -3494,11 +3450,11 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 }
 
 .omnisearch-result.is-selected .omnisearch-default-highlight {
-  background-color: rgb(var(--ctp-rosewater), 60%);
+  background-color: rgb(var(--efs-rosewater), 60%);
 }
 
 .omnisearch-result:not(.is-selected) .omnisearch-highlight.omnisearch-default-highlight {
-  background-color: rgb(var(--ctp-rosewater), 100%);
+  background-color: rgb(var(--efs-rosewater), 100%);
 }
 
 .omnisearch-result.is-selected .omnisearch-result__folder-path > span,
@@ -3511,33 +3467,33 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 * MAKE.md
 */
 body:not(.is-mobile) .mk-main-menu-button:hover {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 
-.ctp-full-palette .mk-sidebar-item:hover {
-  background-color: rgb(var(--ctp-pink));
+.efs-full-palette .mk-sidebar-item:hover {
+  background-color: rgb(var(--efs-pink));
   color: var(--text-on-accent);
 }
-.ctp-full-palette .mk-sidebar-item:hover svg {
+.efs-full-palette .mk-sidebar-item:hover svg {
   color: var(--text-on-accent);
 }
 
-.ctp-full-palette .mk-sidebar-item-active {
-  box-shadow: inset 0 0 4px rgb(var(--ctp-crust)), inset 0 0 6px rgb(var(--ctp-base));
-  outline: 1px solid rgb(var(--ctp-surface1));
+.efs-full-palette .mk-sidebar-item-active {
+  box-shadow: inset 0 0 4px rgb(var(--efs-crust)), inset 0 0 6px rgb(var(--efs-base));
+  outline: 1px solid rgb(var(--efs-surface1));
 }
-.ctp-full-palette .mk-sidebar-item-active svg {
-  color: rgb(var(--ctp-pink)) !important;
+.efs-full-palette .mk-sidebar-item-active svg {
+  color: rgb(var(--efs-pink)) !important;
 }
-.ctp-full-palette .mk-sidebar-item-active:hover svg, .ctp-full-palette .mk-sidebar-item-active:hover {
-  background-color: rgb(var(--ctp-pink));
+.efs-full-palette .mk-sidebar-item-active:hover svg, .efs-full-palette .mk-sidebar-item-active:hover {
+  background-color: rgb(var(--efs-pink));
   box-shadow: none;
   color: var(--text-on-accent) !important;
 }
 
 .mk-sidebar-item:hover {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 .mk-sidebar-item:hover svg {
@@ -3545,20 +3501,20 @@ body:not(.is-mobile) .mk-main-menu-button:hover {
 }
 
 .mk-sidebar-item-active {
-  box-shadow: inset 0 0 4px rgb(var(--ctp-crust)), inset 0 0 6px rgb(var(--ctp-base));
-  outline: 1px solid rgb(var(--ctp-surface1));
+  box-shadow: inset 0 0 4px rgb(var(--efs-crust)), inset 0 0 6px rgb(var(--efs-base));
+  outline: 1px solid rgb(var(--efs-surface1));
 }
 .mk-sidebar-item-active svg {
-  color: rgb(var(--ctp-accent)) !important;
+  color: rgb(var(--efs-accent)) !important;
 }
 .mk-sidebar-item-active:hover svg, .mk-sidebar-item-active:hover {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
   box-shadow: none;
   color: var(--text-on-accent) !important;
 }
 
 body:not(.is-mobile) .mk-tree-item:hover {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 
@@ -3568,7 +3524,7 @@ body:not(.is-mobile) .mk-tree-item:hover {
 
 .mk-options-menu__suggestions li.is-active,
 .mk-options-menu__suggestions li:hover {
-  background-color: rgb(var(--ctp-accent));
+  background-color: rgb(var(--efs-accent));
   color: var(--text-on-accent);
 }
 
@@ -3579,7 +3535,7 @@ body:not(.is-mobile) .mk-tree-item:hover {
 }
 
 .mk-file-context-field-new button:hover {
-  color: rgb(var(--ctp-accent)) !important;
+  color: rgb(var(--efs-accent)) !important;
 }
 
 body:not(.is-mobile) .mk-folder-buttons button {
@@ -3590,10 +3546,10 @@ body:not(.is-mobile) .mk-folder-buttons button svg {
   border-radius: 4px;
 }
 body:not(.is-mobile) .mk-folder-buttons button:hover svg {
-  background-color: rgb(var(--ctp-surface0));
+  background-color: rgb(var(--efs-surface0));
   box-shadow: var(--box-shadow-large);
   color: var(--text-normal) !important;
-  outline: 1px solid rgb(var(--ctp-surface1));
+  outline: 1px solid rgb(var(--efs-surface1));
 }
 
 /*
@@ -3601,16 +3557,16 @@ body:not(.is-mobile) .mk-folder-buttons button:hover svg {
 * but not required for the theme to work when MAKE.md is off, so
 * it should be simplified at some point.
 */
-body:not(.is-grabbing).ctp-full-palette .mk-sidebar {
-  --nav-item-background-active: rgb(var(--ctp-mauve));
-  --nav-item-background-selected: rgb(var(--ctp-mauve));
+body:not(.is-grabbing).efs-full-palette .mk-sidebar {
+  --nav-item-background-active: rgb(var(--efs-mauve));
+  --nav-item-background-selected: rgb(var(--efs-mauve));
   --nav-item-color-active: var(--text-on-accent);
   --nav-item-color-selected: var(--text-on-accent);
 }
 
-body:not(.is-grabbing .ctp-full-palette) .mk-sidebar {
-  --nav-item-background-active: rgb(var(--ctp-accent), 90%);
-  --nav-item-background-selected: rgb(var(--ctp-accent), 90%);
+body:not(.is-grabbing .efs-full-palette) .mk-sidebar {
+  --nav-item-background-active: rgb(var(--efs-accent), 90%);
+  --nav-item-background-selected: rgb(var(--efs-accent), 90%);
   --nav-item-color-active: var(--text-on-accent);
   --nav-item-color-selected: var(--text-on-accent);
 }
@@ -3619,23 +3575,23 @@ body:not(.is-grabbing .ctp-full-palette) .mk-sidebar {
 * 1.  Folder Notes, issue #67
 */
 body:not(.disable-folder-highlight) .tree-item-self.fn-is-active,
-body.ctp-full-palette:not(.disable-folder-highlight) .tree-item-self.fn-is-active {
-  --nav-item-background-active: rgb(var(--ctp-mauve));
-  --nav-item-background-selected: rgb(var(--ctp-mauve));
+body.efs-full-palette:not(.disable-folder-highlight) .tree-item-self.fn-is-active {
+  --nav-item-background-active: rgb(var(--efs-mauve));
+  --nav-item-background-selected: rgb(var(--efs-mauve));
   --nav-item-color-active: var(--text-on-accent);
   --nav-item-color-selected: var(--text-on-accent);
 }
 
 body:not(.disable-folder-highlight) .tree-item-self.fn-is-active {
-  --nav-item-background-active: rgb(var(--ctp-accent));
-  --nav-item-background-selected: rgb(var(--ctp-accent));
+  --nav-item-background-active: rgb(var(--efs-accent));
+  --nav-item-background-selected: rgb(var(--efs-accent));
   --nav-item-color-active: var(--text-on-accent);
   --nav-item-color-selected: var(--text-on-accent);
 }
 
 body:not(.is-grabbing) .tree-item-self.fn-is-active:hover {
-  --nav-item-background-active: rgb(var(--ctp-accent), 90%);
-  --nav-item-background-selected: rgb(var(--ctp-accent), 90%);
+  --nav-item-background-active: rgb(var(--efs-accent), 90%);
+  --nav-item-background-selected: rgb(var(--efs-accent), 90%);
   --nav-item-color-active: var(--text-on-accent);
   --nav-item-color-selected: var(--text-on-accent);
 }
@@ -3645,12 +3601,12 @@ body:not(.is-grabbing) .tree-item-self.fn-is-active:hover {
 */
 .active.svelte-q3wqg9, .day.svelte-q3wqg9:active,
 .active.today.svelte-q3wqg9 {
-  background-color: rgb(var(--ctp-green)) !important;
+  background-color: rgb(var(--efs-green)) !important;
   color: var(--text-on-accent) !important;
 }
 
 .today.svelte-q3wqg9 {
-  background-color: rgb(var(--ctp-accent)) !important;
+  background-color: rgb(var(--efs-accent)) !important;
   color: var(--text-on-accent) !important;
 }
 
@@ -3685,9 +3641,9 @@ body:not(.is-grabbing) .tree-item-self.fn-is-active:hover {
 }
 
 /* Make Style Settings accent selection use choice for active items  */
-body.css-settings-manager:not(.is-phone, .ctp-full-palette) .horizontal-tab-nav-item.is-active,
-body.css-settings-manager:not(.is-phone, .ctp-full-palette) .vertical-tab-nav-item.is-active {
-  --ctp-accent: unset ;
+body.css-settings-manager:not(.is-phone, .efs-full-palette) .horizontal-tab-nav-item.is-active,
+body.css-settings-manager:not(.is-phone, .efs-full-palette) .vertical-tab-nav-item.is-active {
+  --efs-accent: unset ;
 }
 
 /**
@@ -4522,5 +4478,3 @@ li[data-task=b] > p > input:checked {
   src: url(data:font/woff2;base64,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) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
-/*# sourceMappingURL=theme.css.map */

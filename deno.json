@@ -1,0 +1,12 @@
+{
+  "tasks": {
+    "port": "deno run -A ./scripts/port/main.ts",
+    "build": "deno run -A npm:sass@1.80.6 scss/main.scss theme.css --no-source-map",
+    "check": "deno task port && deno task build"
+  },
+  "imports": {
+    "@std/cli": "jsr:@std/cli@^1.0.9",
+    "@std/fs": "jsr:@std/fs@^1.0.8",
+    "@std/path": "jsr:@std/path@^1.0.8"
+  }
+}
