@@ -1607,7 +1607,7 @@ settings:
 
 /* ------------------Selecting Accents------------------- */
 .efs-full-palette {
-  --efs-accent: var(--efs-lavender);
+  --efs-accent: var(--efs-green);
 }
 
 .efs-accent-rosewater {
@@ -2909,7 +2909,7 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 .theme-light:not(.css-settings-manager),
 .efs-full-palette {
   --blockquote-border-color: rgb(var(--efs-lavender));
-  --efs-accent: var(--efs-lavender);
+  --efs-accent: var(--efs-green);
   --divider-color-hover: rgb(var(--efs-blue));
   --hr-color: rgb(var(--efs-blue));
   --indentation-guide-color: rgb(var(--efs-surface1));

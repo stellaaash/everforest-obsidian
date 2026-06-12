@@ -53,6 +53,8 @@ git diff                                         # review, then commit
 
 The 26 upstream color slots keep their names (`--efs-rosewater` … `--efs-crust`) so the port stays mechanical. Exact values and the slot rules live in [`scripts/port/palette.ts`](scripts/port/palette.ts); 7 accent slots have no everforest equivalent and are derived from exact anchors (formulas noted per color). Chromatic values are shared with the sibling port [everforest-userstyles](https://github.com/stellaaash/everforest-userstyles).
 
+Deliberate deviation: the default accent ("Full palette" mode, and without Style Settings) is **green** — upstream uses lavender, a derived purple with no native everforest hue. Picking Lavender explicitly in Style Settings still works.
+
 ## Credits & license
 
 - [catppuccin/obsidian](https://github.com/catppuccin/obsidian) — the original theme this port is generated from; all structural and component styling is theirs.
