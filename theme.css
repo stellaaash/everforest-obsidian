@@ -2006,8 +2006,8 @@ body {
 
 .callout {
   --callout-icon: lucide-pencil;
-  border-color: rgb(var(--callout-color), 60%);
-  background-color: rgb(var(--callout-color), 10%);
+  border-color: color-mix(in srgb, var(--callout-color) 60%, transparent);
+  background-color: color-mix(in srgb, var(--callout-color) 10%, transparent);
 }
 
 .cm-s-obsidian span.cm-formatting-quote {
@@ -2784,7 +2784,7 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
 /* Indicates item is selected/focused */
 .canvas-node.is-selected .canvas-node-label,
 .canvas-node.is-focused .canvas-node-label {
-  color: rgb(var(--canvas-color));
+  color: var(--canvas-color);
 }
 
 .canvas-controls button:hover {
@@ -2809,7 +2809,7 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
 /* Makes boxes a little less intense */
 .canvas-node.is-themed .canvas-node-container {
   border-width: 1px;
-  border-color: rgb(var(--canvas-color), 60%);
+  border-color: color-mix(in srgb, var(--canvas-color) 60%, transparent);
   box-shadow: none;
 }
 
@@ -2820,7 +2820,7 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover .tree-item-icon,
 }
 
 .canvas-node.is-themed .canvas-node-content {
-  background-color: rgb(var(--canvas-color), 10%);
+  background-color: color-mix(in srgb, var(--canvas-color) 10%, transparent);
 }
 
 .mod-settings input.slider {
